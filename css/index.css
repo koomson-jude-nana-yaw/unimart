@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: Poppins "Times New Roman", Times, serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.body-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  /* border-right: 3px solid #1d00c4; */
+  /* border-left: 3px solid #1d00c4; */
+}
+/* ------------------------------------------- */
+
+/* Navbar styling */
+.top-navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background: #ffffff;
+  width: 100%;
+  padding: 20px 0;
+
+  box-shadow: 0px 1px 3px #000000;
+}
+
+/* unimart logo styling */
+.unimart-logo {
+  display: inline-flex;
+}
+.unimart-logo a {
+  font-family: Poppins, serif;
+  font-weight: bolder;
+  color: #1d00c4;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  padding: 10px 15px;
+  border: 1px solid #ffffff;
+  transition: all ease-in 0.3s;
+}
+
+.unimart-logo a span {
+  color: #ff0000;
+}
+
+.unimart-logo a:hover {
+  border-color: #1d00c4;
+}
+
+/* navbar links styling */
+.nav-items-container {
+  align-content: center;
+}
+
+.nav-links {
+  display: inline-flex;
+  justify-content: space-between;
+  align-content: center;
+  /* padding: 0 20px; */
+}
+
+.nav-links a {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #000000;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  transition: all ease-in 0.3s;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+}
+
+.nav-links a:hover {
+  color: #1d00c4;
+  border: 1px solid #1d00c4;
+}
+
+/* search container styling */
+/* .search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.contact-us-link {
+  display: inline-flex;
+  border: #1d00c4 1px solid;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  color: #1d00c4;
+  transition: all ease-in 0.3s;
+}
+
+.contact-us-link:hover {
+  color: #ffffff;
+  border-color: #ff0000;
+  background: #ff0000;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-item input {
+  border: #1d00c4 1px solid;
+  border-radius: 50px;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  outline: none;
+  /* display: none; */
+}
+
+.search-submit-btn button {
+  background: none;
+  border: none;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* sign up and sign in btn */
+.nav-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sign-up-btn,
+.sign-in-btn {
+  background: none;
+  border: none;
+}
+
+.sign-up-btn a,
+.sign-in-btn a {
+  font-size: 0.9rem;
+  color: #1d00c4;
+  border-radius: 50px;
+  border: 1px solid #1d00c4;
+  padding: 10px 15px;
+  transition: all ease-in 0.3s;
+}
+
+.sign-up-btn a {
+  color: #ffffff;
+  background: #1d00c4;
+  margin: 0 10px;
+}
+
+.sign-in-btn a:hover {
+  color: #ffffff;
+  background: #1d00c4;
+}
+
+.sign-up-btn a:hover {
+  background: #ff0000;
+  color: #ffffff;
+  border-color: #ff0000;
+}
+
+.sidebar-open-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.sidebar-close-btn {
+  position: absolute;
+  top: 0;
+  right: 230px;
+  cursor: pointer;
+  z-index: 50;
+  transform: rotate(90deg);
+  color: #b60202;
+  padding: 20px;
+}
+/* sidebar styling */
+
+.side-navbar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(25px);
+  top: 0;
+  right: 0;
+  z-index: 10;
+  width: 300px;
+  height: 100vh;
+  box-shadow: -2px 0 10px 2px rgba(0, 0, 0, 0.4);
+  padding: 0 30px;
+  transform: translateX(400px);
+  transition: all 0.5s ease-in;
+}
+.side-navbar.active {
+  transform: translateX(0);
+}
+.side-navbar-group {
+  margin: 50px 0;
+}
+.side-navbar-group li {
+  padding: 20px 20px 20px 0;
+  border-bottom: 1px solid rgba(90, 89, 89, 0.3);
+  transition: transform 0.5s ease-in;
+}
+.side-navbar-group li:hover {
+  transform: translateX(10px);
+}
+.side-navbar-item {
+  color: #000000;
+  font-size: 1.3em;
+}
+.side-navbar-item:hover {
+  color: #b60202;
+}
+
+/* ----------------------------------------------------------- */
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .body-container {
+    background: green;
+  }
+  /*  */
+
+  .sign-in-btn,
+  .sign-up-btn,
+  .contact-us-container {
+    display: none;
+  }
+}
+
+/*  */
+@media screen and (max-width: 992px) {
+  .body-container {
+    background: yellow;
+  }
+}
+
+/*  */
+@media screen and (max-width: 768px) {
+  .body-container {
+    background: brown;
+  }
+
+  .unimart-logo a {
+    border-color: #1d00c4;
+  }
+  /*  */
+
+  .sidebar-open-btn {
+    display: block;
+  }
+
+  .nav-links li:nth-child(5),
+  .search-container {
+    display: none;
+  }
+}
+
+/*  */
+@media screen and (max-width: 540px) {
+  .body-container {
+    background: orange;
+  }
+  .nav-links {
+    display: none;
+  }
+}
