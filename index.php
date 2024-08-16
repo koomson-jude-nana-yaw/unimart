@@ -69,11 +69,11 @@
             <!-- --------------- -->
              <div class="nav-btn-container">
                 <div class="sign-in-btn">
-                    <a href="#">Sign In</a>
+                    <a href="includes/signin.php">Sign In</a>
                 </div>
                 <!--  -->
                 <div class="sign-up-btn">
-                    <a href="#">Sign Up</a>
+                    <a href="includes/signup.php">Sign Up</a>
                 </div>
                  <!-- sidebar btn -->
                 <div class="sidebar-open-btn">

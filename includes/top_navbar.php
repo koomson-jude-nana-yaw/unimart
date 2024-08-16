@@ -51,11 +51,11 @@
             <!-- --------------- -->
              <div class="nav-btn-container">
                 <div class="sign-in-btn">
-                    <a href="#">Sign In</a>
+                    <a href="../includes/signin.php">Sign In</a>
                 </div>
                 <!--  -->
                 <div class="sign-up-btn">
-                    <a href="#">Sign Up</a>
+                    <a href="../includes/signup.php">Sign Up</a>
                 </div>
                  <!-- sidebar btn -->
                 <div class="sidebar-open-btn">
@@ -109,7 +109,7 @@
             </ul>
             <!--  -->
             <div class="sidebar-close-btn">
-                <i class="fas fa-close fa-3x "></i>
+                <i class="fas fa-close fa-3x"></i>
             </div>
         </div>
     <!-- End of side bar -->
