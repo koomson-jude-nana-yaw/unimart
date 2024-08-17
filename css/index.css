@@ -237,7 +237,7 @@ ul {
 /* Media Queries */
 @media screen and (max-width: 1200px) {
   .body-container {
-    background: green;
+    /* background: green; */
   }
   /*  */
 
@@ -251,14 +251,14 @@ ul {
 /*  */
 @media screen and (max-width: 992px) {
   .body-container {
-    background: yellow;
+    /* background: yellow; */
   }
 }
 
 /*  */
 @media screen and (max-width: 768px) {
   .body-container {
-    background: brown;
+    /* background: brown; */
   }
 
   .unimart-logo a {
@@ -279,7 +279,7 @@ ul {
 /*  */
 @media screen and (max-width: 540px) {
   .body-container {
-    background: orange;
+    /* background: orange; */
   }
   .nav-links {
     display: none;

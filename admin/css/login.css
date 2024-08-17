@@ -17,6 +17,7 @@ ul {
 img {
   /* width: 100%; */
 }
+
 .error-container {
   position: absolute;
   top: 0;
@@ -35,7 +36,7 @@ img {
 }
 
 .body-container {
-  background: #1d00c4;
+  background: #ff0000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,7 +44,7 @@ img {
   height: 100vh;
 }
 
-.signup-container {
+.signin-container {
   max-width: 1440px;
   max-height: 70vh;
   height: 70vh;
@@ -65,10 +66,10 @@ img {
 .form-header-container {
 }
 
-.signup-username-logo-container {
+.signin-username-logo-container {
   text-align: center;
   font-size: 1.5rem;
-  color: #ff0000;
+  color: #1d00c4;
 }
 
 .unimart-logo {
@@ -96,24 +97,24 @@ img {
   box-shadow: 0 0 3px #000000;
 }
 
-/* .unimart-signup-text-container{
+/* .unimart-signin-text-container{
 
 } */
 
-.unimart-signup-text-container .text-signup {
+.unimart-signin-text-container .text-signin {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
-  color: #1d00c4;
+  color: #ff0000;
 }
 
 /* form input styling */
 
-.signup-form {
+.signin-form {
 }
 
-.signup-form .input-item,
-.signup-form .submit-item {
+.signin-form .input-item,
+.signin-form .submit-item {
   width: 90%;
   margin: 10px auto;
   background: #ffffff;
@@ -133,29 +134,20 @@ img {
 
 .submit-item input {
   width: 100%;
-  background: #1d00c4;
+  background: #ff0000;
   color: #ffffff;
   cursor: pointer;
 }
 
 .form-icon {
-  color: #ff0000;
-}
-
-.checkbox-item {
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-.checkbox-item input {
   color: #1d00c4;
 }
 
-.signin-link-container {
+.signup-link-container {
   text-align: center;
 }
 
-.signin-link-container a {
+.signup-link-container a {
   font-weight: bold;
 }
 
@@ -191,15 +183,15 @@ img {
     display: none;
   }
 
-  .signup-form .input-item,
-  .signup-form .submit-item {
+  .signin-form .input-item,
+  .signin-form .submit-item {
     width: 100%;
   }
 }
 
 /*  */
 @media screen and (max-width: 540px) {
-  .signup-container {
+  .signin-container {
     max-width: 100vw;
     max-height: 100vh;
     height: 100vh;

@@ -37,6 +37,7 @@
                     <li><a href="pages/services.php">Services</a></li>
                     <li><a href="pages/shops.php">Shops</a></li>
                     <li><a href="pages/about_us.php">About Us</a></li>
+                    <li><a href="pages/contact_us.php">Contact Us</a></li>
                     <!-- <li></li> -->
                 </ul>
              </div>
@@ -60,9 +61,9 @@
                 </form>
             </div>
             <!-- --------------------- -->
-            <div class="contact-us-container">
+            <!-- <div class="contact-us-container">
                 <a href="pages/contact_us.php" class="contact-us-link" >Contact Us</a>
-            </div>
+            </div> -->
             <!-- ------------------ -->
 
 

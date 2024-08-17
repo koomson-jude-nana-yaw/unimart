@@ -6,6 +6,4 @@ require_once 'database_connection.php';
     $database = new Database();
     $connection = $database->connection();
 
-    if ($connection) {
-        print("yes");
-    }
+    

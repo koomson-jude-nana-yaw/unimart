@@ -19,6 +19,17 @@
   </head>
   <body>
     <main class="body-container">
+      <!--  -->
+      <!--  -->
+      <p class="error-container <?php if(isset($_GET['error'])){ echo 'error-container-active'; } ?>">
+        <?php 
+        if (isset($_GET['error'])) {
+          echo $_GET['error'];
+        } 
+        ?>
+      </p>
+
+      <!--  -->
       <!-- ------- -->
         <div class="signup-container">
           <!--  -->
@@ -40,12 +51,12 @@
                   </div>
               </div>
               <!--  -->
-              <form action="../configuration/sign_up.php" class="signup-form">
+              <form action="../configuration/sign_up.php" method="post" class="signup-form">
                 <!--  -->
                 <!--  -->
                 <div class="input-item">
                   <input type="text" name="username" placeholder="User Name" autocomplete="off">
-                  <span class="user-icon">
+                  <span class="form-icon">
                     <i class="fas fa-user-circle"></i>
                   </span>
                 </div>
@@ -53,7 +64,7 @@
                 <!--  -->
                 <div class="input-item">
                   <input type="text" name="email" placeholder="Your Email" autocomplete="off">
-                  <span class="email-icon">
+                  <span class="form-icon">
                     <i class="fas fa-envelope"></i>
                   </span>
                 </div>
@@ -61,7 +72,7 @@
                 <!--  -->
                 <div class="input-item">
                   <input type="text" name="phone_number" placeholder="Phone Number" autocomplete="off">
-                  <span class="phone-icon">
+                  <span class="form-icon">
                     <i class="fas fa-phone"></i>
                   </span>
                 </div>
@@ -69,22 +80,22 @@
                 <!--  -->
                 <div class="input-item">
                   <input type="password" name="password" placeholder="Password" autocomplete="off">
-                  <span class="lock-icon">
+                  <span class="form-icon">
                     <i class="fas fa-lock"></i>
                   </span>
                 </div>
                 <!--  -->
                 <!--  -->
                 <div class="input-item">
-                  <input type="password" name="password" placeholder="Confirm Password">
-                  <span class="lock-icon">
+                  <input type="password" name="confirm_password" placeholder="Confirm Password">
+                  <span class="form-icon">
                     <i class="fas fa-lock"></i>
                   </span>
                 </div>
                 <!--  -->
                 <!--  -->
                 <div class="checkbox-item">
-                  <input type="checkbox" name="terms_of_service" value="yes">
+                  <input type="checkbox" name="terms_of_service" value="YES">
                   <span class="terms-text" ><a href="#">I agree to the Terms of Service</a></span>
                 </div>
                 <!--  -->

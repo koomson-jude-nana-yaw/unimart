@@ -1,13 +1,13 @@
 <?php
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    redirect('../vendor/index.php');
+    redirect('../admin/dashboard.php');
     exit();
     
 }
 
 
-include_once('../database/connection_instance.php');
-include_once('../includes/functions.php');
+include_once('../../database/connection_instance.php');
+include_once('../../includes/functions.php');
 
 
 
@@ -27,13 +27,13 @@ if (isset($_POST['submit'])) {
 
     
     if (empty($username)) {
-        redirect('../includes/signin.php','error=Username is empty');
+        redirect('../index.php','error=Username is empty');
         exit();
     }
 
 
     if (empty($password)) {
-       redirect('../includes/signin.php','error=Please enter your password');
+       redirect('../index.php','error=Please enter your password');
        exit();
     }
 
@@ -47,7 +47,7 @@ if (isset($_POST['submit'])) {
             $stmt_vendor->execute(['email' => $username, 'username' => $username]);
 
             if ($stmt_vendor->rowCount() == 0) {
-                redirect('../includes/signin.php','error=Wrong username or email');
+                redirect('../includes/signin.php','Wrong username or email');
                 exit();
             } 
 
@@ -64,17 +64,18 @@ if (isset($_POST['submit'])) {
             $_SESSION['image'] = $vendor_data['imageURL'];
             $_SESSION['email'] = $vendor_data['email'];
             $_SESSION['username'] = $vendor_data['username'];
+            $_SESSION['account_type'] = $vendor_data['account_type'];
 
 
             // 
 
-            redirect('../vendor');
+            redirect('../dashboard.php');
             exit();
 
 
 
 
 } else {
-    redirect('../includes/signin.php');
+    redirect('../index.php');
     exit();
 }

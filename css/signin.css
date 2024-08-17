@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: Poppins "Times New Roman", Times, serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+img {
+  /* width: 100%; */
+}
+
+.error-container {
+  position: absolute;
+  top: 0;
+  color: #ff0000;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-top: 15px;
+  font-size: 1.3rem;
+  background: #ffffff;
+  transform: translateY(-60px);
+  transition: all ease-in 0.3s;
+}
+
+.error-container-active {
+  transform: translateY(0);
+}
+
+.body-container {
+  background: #1d00c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.signin-container {
+  max-width: 1440px;
+  max-height: 70vh;
+  height: 70vh;
+  width: 80vw;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.form-container {
+  width: 35%;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-header-container {
+}
+
+.signin-username-logo-container {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ff0000;
+}
+
+.unimart-logo {
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.unimart-logo a {
+  font-family: Poppins, serif;
+  font-weight: bolder;
+  color: #1d00c4;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  padding: 7px 10px;
+  border: 1px solid #ffffff;
+  border-color: #1d00c4;
+  transition: all ease-in 0.3s;
+}
+
+.unimart-logo a span {
+  color: #ff0000;
+}
+
+.unimart-logo a:hover {
+  box-shadow: 0 0 3px #000000;
+}
+
+/* .unimart-signin-text-container{
+
+} */
+
+.unimart-signin-text-container .text-signin {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1d00c4;
+}
+
+/* form input styling */
+
+.signin-form {
+}
+
+.signin-form .input-item,
+.signin-form .submit-item {
+  width: 90%;
+  margin: 10px auto;
+  background: #ffffff;
+  border: 1px solid #dadada;
+  border-radius: 20px;
+}
+
+.input-item input,
+.submit-item input {
+  width: 90%;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  padding: 10px;
+  outline: none;
+}
+
+.submit-item input {
+  width: 100%;
+  background: #1d00c4;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.form-icon {
+  color: #ff0000;
+}
+
+.signup-link-container {
+  text-align: center;
+}
+
+.signup-link-container a {
+  font-weight: bold;
+}
+
+.avatar-container {
+  overflow: hidden;
+  width: 50%;
+}
+/* 
+.avatar-container img {
+  border-radius: 300px 0 0 300px;
+} */
+
+/* ----------------------------------------------------------- */
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .form-container {
+    width: 70%;
+  }
+}
+
+/*  */
+@media screen and (max-width: 992px) {
+}
+
+/*  */
+@media screen and (max-width: 768px) {
+  .form-container {
+    width: 70%;
+  }
+
+  .avatar-container {
+    display: none;
+  }
+
+  .signin-form .input-item,
+  .signin-form .submit-item {
+    width: 100%;
+  }
+}
+
+/*  */
+@media screen and (max-width: 540px) {
+  .signin-container {
+    max-width: 100vw;
+    max-height: 100vh;
+    height: 100vh;
+    width: 100vw;
+    /* background: #1d00c4; */
+  }
+
+  .form-container {
+    width: 90%;
+  }
+}
