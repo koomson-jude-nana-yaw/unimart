@@ -85,7 +85,7 @@
                 <!--  -->
                 <div class="checkbox-item">
                   <input type="checkbox" name="terms_of_service" value="yes">
-                  <span class="terms-text" >I agree to the Terms of Service</span>
+                  <span class="terms-text" ><a href="#">I agree to the Terms of Service</a></span>
                 </div>
                 <!--  -->
                 <!--  -->

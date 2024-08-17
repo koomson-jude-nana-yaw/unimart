@@ -14,8 +14,8 @@ a {
 ul {
   list-style: none;
 }
-img{
-    /* width: 100%; */
+img {
+  /* width: 100%; */
 }
 
 .body-container {
@@ -28,40 +28,37 @@ img{
 }
 
 .signup-container {
-  width: 1440px;
+  max-width: 1440px;
   max-height: 70vh;
   height: 70vh;
-  /* width: 70vw; */
-  /* background: #ffffff; */
+  width: 80vw;
+  background: #ffffff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  border-radius: 20px;
 }
 
-.form-container{
-    width: 40%;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-
+.form-container {
+  width: 35%;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-
-.form-header-container{
-
+.form-header-container {
 }
 
-.signup-username-logo-container{
-    text-align: center;
-    font-size: 1.5rem;
-    color: #ff0000;
+.signup-username-logo-container {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ff0000;
 }
 
 .unimart-logo {
-  text-align:center;
-  margin-top:15px;
-  margin-bottom:15px;
-
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .unimart-logo a {
   font-family: Poppins, serif;
@@ -83,86 +80,80 @@ img{
   box-shadow: 0 0 3px #000000;
 }
 
-
 /* .unimart-signup-text-container{
 
 } */
 
-.unimart-signup-text-container .text-signup{
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    color: #1d00c4;
+.unimart-signup-text-container .text-signup {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #1d00c4;
 }
 
 /* form input styling */
 
-.signup-form{
-
+.signup-form {
 }
 
-.signup-form .input-item, .signup-form .submit-item{
-    width: 70%;
-    margin: 10px auto;
-    background: #ffffff;
-    border: 1px solid #dadada;
-    border-radius: 20px;
+.signup-form .input-item,
+.signup-form .submit-item {
+  width: 90%;
+  margin: 10px auto;
+  background: #ffffff;
+  border: 1px solid #dadada;
+  border-radius: 20px;
 }
 
-
-
-.input-item input, .submit-item input{
-    width: 90%;
-    border: none;
-    border-radius: 20px;
-    font-size: 1.1rem;
-    padding: 10px;
-    outline: none;
+.input-item input,
+.submit-item input {
+  width: 90%;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  padding: 10px;
+  outline: none;
 }
 
-.submit-item input{
-    width: 100%;
-    background: #1d00c4;
-    color: #ffffff;
-    cursor: pointer;
+.submit-item input {
+  width: 100%;
+  background: #1d00c4;
+  color: #ffffff;
+  cursor: pointer;
 }
 
-
-.checkbox-item{
-    text-align: center;
-    font-size: 1.1rem;
+.checkbox-item {
+  text-align: center;
+  font-size: 1.1rem;
 }
 
-.checkbox-item input{
-    color: #1d00c4;
+.checkbox-item input {
+  color: #1d00c4;
 }
 
-
-.signin-link-container{
-    text-align: center;
+.signin-link-container {
+  text-align: center;
 }
 
-.signin-link-container a{
-    font-weight: bold;
+.signin-link-container a {
+  font-weight: bold;
 }
 
-
-.avatar-container{
-    overflow: hidden;
-    width: 50%;
+.avatar-container {
+  overflow: hidden;
+  width: 50%;
 }
 
-.avatar-container img{
-    border-radius: 300px 0 0 300px;
+.avatar-container img {
+  /* border-radius: 300px 0 0 300px; */
 }
-
 
 /* .signup-container div {
   width: 50vw;
   height: 20vh;
   background: #ffffff; */
-  /* margin: 0 auto; */
-}
+/* margin: 0 auto; */
+/* } */
 
 /*  */
 

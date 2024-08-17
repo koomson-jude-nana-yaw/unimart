@@ -4,10 +4,9 @@ class Database {
 
 
     private $severName = "127.0.0.1";
-    private $userName = "uccsrchall";
-    // private $password = "";
-    private $password = "Uccsrchall@2023";
-    private $database_name = "uccsrchallDB";
+    private $userName = "admin";
+    private $password = "A@2024";
+    private $database_name = "unimartDB";
     private $connect;
 
     
