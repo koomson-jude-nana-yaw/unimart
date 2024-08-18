@@ -14,6 +14,7 @@
     
         <!--  css -->
     <link rel="stylesheet" href="css/index.css?v=<?= time();?>">
+    <link rel="stylesheet" href="css/footer.css?v=<?= time();?>">
     <!-- <link rel="stylesheet" href="css/home.css?v=<?= time();?>"> -->
   </head>
   <body>
@@ -135,12 +136,7 @@
 
 
 
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet consequuntur iste vitae provident ratione accusamus illum placeat quibusdam, ab explicabo excepturi a eaque aspernatur! Possimus quo commodi minus nemo accusamus!
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta incidunt ex iste nam eos ipsa? Fugit inventore, a numquam sit autem reiciendis quisquam omnis accusantium vitae optio deleniti ut debitis?
-
-        </p>
-    
+       
 
 
 
@@ -152,9 +148,57 @@
 
 
 
+<div class="footer-container">
+            <div class="top-container">
 
+            </div>
+            <!--  -->
+            <!--  -->
 
-    </main>
+            <hr>
+            <div class="middle-container">
+                  <div class="unimart-logo">
+                   <a href="../index.php">Uni<span>Mart</span> </a>
+                  </div>
+
+                  <div class="policy-container">
+                        <a href="#">User Agreements</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Cookie Policy</a>
+                  </div>
+
+            </div>
+            <!--  -->
+            <hr>
+            <!--  -->
+
+            <div class="bottom-container">
+                  <!-- <ul class="ads">
+                        <li>2</li>
+                        <li>2</li>
+                        <li>2</li>
+                        <li>2</li>
+                        <li>2</li>
+                        <li>2</li>
+                  </ul> -->
+                  <p class="copyright-text">
+                  &copy; Unimart. All rights reserved.
+            </p>
+            </div>
+            <!--  -->
+            <!--  -->
+            
+      </div>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   </main>
   <!-- font awesome js -->
         <script src="fontawesome/js/all.js"></script>
         <script src="js/index.js"></script>

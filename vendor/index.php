@@ -12,7 +12,7 @@
 <?php
 
 
-    include_once 'footer.php';
+    include_once '../includes/footer.php';
 
 ?>
 

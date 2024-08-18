@@ -52,7 +52,7 @@
                   </div>
               </div>
               <!--  -->
-              <form action="config/log_config.php" method="post" class="signin-form">
+              <form action="config/login_config.php" method="post" class="signin-form">
                 <!--  -->
                 <!--  -->
                 <div class="input-item">
@@ -110,8 +110,12 @@
 
 
 
+   </main>
+  <!-- font awesome js -->
+        <script src="fontawesome/js/all.js"></script>
+        <script src="js/index.js"></script>
+
+</body>
+</html>
 
 
-<?php 
-    require_once '../includes/footer.php';
-?>

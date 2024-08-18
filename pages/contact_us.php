@@ -12,6 +12,7 @@
     
         <!--  css -->
     <link rel="stylesheet" href="../css/index.css?v=<?= time();?>">
+    <link rel="stylesheet" href="../css/footer.css?v=<?= time();?>">
     <!-- <link rel="stylesheet" href="css/home.css?v=<?= time();?>"> -->
   </head>
   <body>
@@ -20,6 +21,8 @@
 <?php 
     require_once '../includes/top_navbar.php';
 ?>
+
+
 
 
 
