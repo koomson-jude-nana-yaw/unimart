@@ -41,3 +41,26 @@
   width: 70%;
   padding: 30px;
 }
+
+/* ----------------------------------------------------------- */
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+}
+
+/*  */
+@media screen and (max-width: 992px) {
+}
+
+/*  */
+@media screen and (max-width: 768px) {
+  .top-container,
+  .bottom-container,
+  .middle-container {
+    width: 90%;
+  }
+}
+
+/*  */
+@media screen and (max-width: 540px) {
+}
