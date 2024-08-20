@@ -63,6 +63,7 @@ require_once '../includes/functions.php';
     <link rel="stylesheet" href="../css/index.css?v=<?= time();?>">
     <link rel="stylesheet" href="css/header.css?v=<?= time();?>">
     <link rel="stylesheet" href="../css/footer.css?v=<?= time();?>">
+    <link rel="stylesheet" href="css/index.css?v=<?= time();?>">
     <!-- <link rel="stylesheet" href="css/home.css?v=<?= time();?>"> -->
   </head>
   <body>
@@ -76,23 +77,9 @@ require_once '../includes/functions.php';
         <nav class="top-navbar-container">
             <!-- unimart logo container -->
             <div class="unimart-logo">
-                <a href="../index.php">Uni<span>Mart</span> </a>
+                <a href="index.php">Uni<span>Mart</span> </a>
             </div>
             <!-- -------------------- -->
-
-            <!-- nav button link container -->
-             <div class="nav-items-container">
-                <ul class="nav-links">
-                    <li><a href="../index.php">Home</a></li>
-                    <li><a href="../pages/products.php">Products</a></li>
-                    <li><a href="../pages/services.php">Services</a></li>
-                    <li><a href="../pages/shops.php">Shops</a></li>
-                    <li><a href="../pages/about_us.php">About Us</a></li>
-                    <li><a href="../pages/contact_us.php">Contact Us</a></li>
-                    <!-- <li></li> -->
-                </ul>
-             </div>
-
 
 
              <!-- ------ -->
@@ -112,77 +99,42 @@ require_once '../includes/functions.php';
                 </form>
             </div>
             <!-- --------------------- -->
-            <!-- <div class="contact-us-container">
-                <a href="#" class="contact-us-link" >Contact Us</a>
-            </div> -->
-            <!-- ------------------ -->
-
-
-            <!-- --------------- -->
-             <div class="nav-btn-container">
-                <div class="sign-in-btn">
-                    <a href="../includes/signin.php">Sign In</a>
+            <div class="account-menu-container">
+                <div class="vendor-image">
+                    <img src="../media/profile_images/bbb.png" alt="picture">
                 </div>
                 <!--  -->
-                <div class="sign-up-btn">
-                    <a href="../includes/signup.php">Sign Up</a>
+                <!--  -->
+                <div class="menu-list-container">
+                    <ul>
+                        <li class="list-item"><a href="index.php">Dashboard</a></li>
+                        <li class="list-item"><a href="shop.php">View Shop</a></li>
+                        <li class="list-item add-item"><a href="./add_product.php">Add New Product</a></li>
+                        <li class="list-item"><a href="pending_orders.php">Pending Orders</a></li>
+                        <li class="list-item"><a href="order_history.php">Order History</a></li>
+                        <li class="list-item"><a href="account_settings.php">Account Settings</a></li>
+                        <li class="list-item logout"><a class="" href="../includes/logout.php">Log Out</a></li>
+                    </ul>
                 </div>
+                <div class="vendor-name-container">
+                    <h1><?php echo strtoupper($_SESSION['username']); ?></h1>
+                </div>
+            </div>
+            <!-- ------------------ -->
+            <div class="nav-btn-container">
                  <!-- sidebar btn -->
                 <div class="sidebar-open-btn">
                     <i class="fas fa-bars"></i>
                 </div>
             <!-- --------- -->
              </div>
-             <!-- ----------- -->
-
             
         </nav>
         <!-- ---------------End of top navbar -->
 
 
         
-         <!-- side bar -->
-         <div class="side-navbar ">
-            <!--  -->
-            <div class="sidebar-search-container">
-                <form action="" class="search-form">
-                    <!--  -->
-                    <div class="search-item">
-                        <input type="text" placeholder="search here">
-                    </div>
-                    <!--  -->
-                    <!--  -->
-                    <div class="search-submit-btn"> 
-                        <button type="submit"> <i class="fas fa-search search-btn" ></i> </button> 
-                    </div>
-
-                    <!-- -------- -->
-                </form>
-            </div>
-            <ul class="side-navbar-group">
-                <li><a href="../index.php" class="side-navbar-item ">Home</a></li>
-                <li><a href="../pages/products.php" class="side-navbar-item">Products</a></li>
-                <li><a href="../pages/services.php" class="side-navbar-item">Services</a></li>
-                <li><a href="../pages/shops.php" class="side-navbar-item">Shops</a></li>
-                <li><a href="../pages/about_us.php" class="side-navbar-item">About Us</a></li>
-                <li><a href="../pages/contact_us.php" class="side-navbar-item">Contatct Us</a></li>
-            </ul>
-            <!--  -->
-            <ul class="socials-group">
-
-                <!-- <li><a href="#" class="socials-item"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#" class="socials-item"><i class="fab fa-twitter "></i></a></li>
-                <li><a href="#" class="socials-item"><i class="fab fa-snapchat "></i></a></li>
-                <li><a href="#" class="socials-item"><i class="fab fa-youtube "></i></a></li>
-                <li><a href="#" class="socials-item"><i class="fab fa-tiktok "></i></a></li>
-                <li><a href="#" class="socials-item"><i class="fab fa-github "></i></a></li> -->
-            </ul>
-            <!--  -->
-            <div class="sidebar-close-btn">
-                <i class="fas fa-close fa-3x"></i>
-            </div>
-        </div>
-    <!-- End of side bar -->
+        
 
 
 
@@ -196,19 +148,8 @@ require_once '../includes/functions.php';
 
 
 
-
-
-
-
-
-    <h1>VENDOR PORTAL</h1>
-    <a href="../includes/logout.php">Log Out</a>
 
         <!--  -->
   
-    <?php 
-
-        echo '<h1>' . $_SESSION['username'] . '</h1>';
     
-    ?>
     <!--  -->

@@ -3,8 +3,6 @@ const sidebarCloseBtn = document.querySelector(".sidebar-close-btn");
 const sideNavbar = document.querySelector(".side-navbar");
 // const container = document.querySelector(".container");
 
-console.log(sidebarOpenBtn);
-
 sidebarOpenBtn.addEventListener("click", () => {
   sidebarOpenBtn.classList.toggle("active");
   sideNavbar.classList.toggle("active");

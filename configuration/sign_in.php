@@ -31,6 +31,20 @@ if (isset($_POST['submit'])) {
         exit();
     }
 
+    // if (!filter_var($email,FILTER_VALIDATE_EMAIL)) {
+    //     redirect("../includes/signin.php", "error=Invalid email");
+    //     exit();
+    // }
+
+    $select_email_query = "SELECT * FROM vendors WHERE email = :email OR username = :username;";
+    $stmt_email = $connection->prepare($select_email_query);
+    $stmt_email->execute(['email' => $username, 'username' => $username]);
+
+    if ($stmt_email->rowCount() < 1) {
+        redirect("../includes/signin.php", "error=This account is not registered.");
+        exit();        
+    }
+
 
     if (empty($password)) {
        redirect('../includes/signin.php','error=Please enter your password');
@@ -54,7 +68,7 @@ if (isset($_POST['submit'])) {
             $vendor_data = $stmt_vendor->fetch(PDO::FETCH_ASSOC);
 
             if (!password_verify($password,$vendor_data['pass_word'])) {
-                redirect('../vendor/signin.php','error=Incorrect password');
+                redirect('../includes/signin.php','error=Incorrect password');
                 exit();
             }
 

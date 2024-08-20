@@ -1,0 +1,111 @@
+.dashboard-text-container {
+  padding: 50px 0;
+}
+
+.dashboard-text-container h2 {
+  font-size: 2rem;
+}
+
+.dashboard-essential-container {
+  width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background: url("../../media/profile_images/nasa-Q1p7bh3SHj8-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background: #754621; */
+}
+
+.steps-text {
+  padding: 10px 0;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.welcome-text {
+  color: #ffffff;
+}
+
+.dashboard-essential-container .wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.add-product-container,
+.set-up-container {
+  background: #ffffff;
+  width: 45%;
+  /* height: 300px; */
+  padding: 30px 20px;
+}
+
+.add-product-container {
+}
+.set-up-container {
+}
+
+.add-product-container h2,
+.set-up-container h2 {
+  font-size: 2rem;
+}
+
+.upload-product-text,
+.set-up-container p {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.add-product-container a,
+.set-up-container a {
+  font-size: 1.2rem;
+}
+
+.dashboard-blank {
+  height: 200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* -----------------------------------------------------------  */
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .dashboard-essential-container {
+    width: 90%;
+  }
+
+  /* .dashboard-blank {
+    width: 100%;
+  } */
+}
+
+/*  */
+@media screen and (max-width: 992px) {
+}
+
+/*  */
+@media screen and (max-width: 768px) {
+  .dashboard-text-container {
+    padding: 50px 40px;
+  }
+}
+
+/*  */
+@media screen and (max-width: 540px) {
+  .dashboard-essential-container .wrapper {
+    display: block;
+  }
+
+  .add-product-container,
+  .set-up-container {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .dashboard-text-container {
+    text-align: center;
+  }
+}
