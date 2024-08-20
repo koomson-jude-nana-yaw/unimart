@@ -64,6 +64,8 @@ require_once '../includes/functions.php';
     <link rel="stylesheet" href="css/header.css?v=<?= time();?>">
     <link rel="stylesheet" href="../css/footer.css?v=<?= time();?>">
     <link rel="stylesheet" href="css/index.css?v=<?= time();?>">
+    <link rel="stylesheet" href="css/shop.css?v=<?= time();?>">
+    <link rel="stylesheet" href="css/add_product.css?v=<?= time();?>">
     <!-- <link rel="stylesheet" href="css/home.css?v=<?= time();?>"> -->
   </head>
   <body>
