@@ -65,7 +65,8 @@ require_once '../includes/functions.php';
     <link rel="stylesheet" href="../css/footer.css?v=<?= time();?>">
     <link rel="stylesheet" href="css/index.css?v=<?= time();?>">
     <link rel="stylesheet" href="css/shop.css?v=<?= time();?>">
-    <link rel="stylesheet" href="css/add_product.css?v=<?= time();?>">
+    <link rel="stylesheet" href="css/product.css?v=<?= time();?>">
+    <link rel="stylesheet" href="css/side_menu.css?v=<?= time();?>">
     <!-- <link rel="stylesheet" href="css/home.css?v=<?= time();?>"> -->
   </head>
   <body>
@@ -103,24 +104,28 @@ require_once '../includes/functions.php';
             <!-- --------------------- -->
             <div class="account-menu-container">
                 <div class="vendor-image">
-                    <img src="../media/profile_images/bbb.png" alt="picture">
+                    <img src="../media/profile_images/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="picture">
                 </div>
                 <!--  -->
                 <!--  -->
                 <div class="menu-list-container">
                     <ul>
-                        <li class="list-item"><a href="index.php">Dashboard</a></li>
-                        <li class="list-item"><a href="shop.php">View Shop</a></li>
-                        <li class="list-item add-item"><a href="./add_product.php">Add New Product</a></li>
-                        <li class="list-item"><a href="pending_orders.php">Pending Orders</a></li>
-                        <li class="list-item"><a href="order_history.php">Order History</a></li>
-                        <li class="list-item"><a href="account_settings.php">Account Settings</a></li>
-                        <li class="list-item logout"><a class="" href="../includes/logout.php">Log Out</a></li>
+                        <li class="list-item"><a href="index.php">DASHBOARD</a></li>
+                        <li class="list-item"><a href="shop.php">SHOP</a></li>
+                        <li class="list-item"><a href="product.php">PRODUCTS</a></li>
+                        <li class="list-item"><a href="pending_orders.php">PENDING ORDERS</a></li>
+                        <li class="list-item"><a href="order_history.php">ORDER HISTORY</a></li>
+                        <li class="list-item"><a href="notification.php">NOTIFICATION</a></li>
+                        <li class="list-item"><a href="settings.php">SETTINGS</a></li>
+                        <li class="list-item"><a href="help_center.php">HELP CENTER</a></li>
+                        <li class="list-item logout"><a class="" href="../configuration/logout.php">Log Out</a></li>
                     </ul>
                 </div>
                 <div class="vendor-name-container">
-                    <h1><?php echo strtoupper($_SESSION['username']); ?></h1>
+                    <h1><?= ucfirst($_SESSION['full_name']); ?> <span> <i class="fas fa-arrow-circle-down"></i></span> </h1>
+                    <p><?= ucfirst($_SESSION['shop_name']); ?></p>
                 </div>
+                
             </div>
             <!-- ------------------ -->
             <div class="nav-btn-container">
@@ -136,22 +141,4 @@ require_once '../includes/functions.php';
 
 
         
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!--  -->
-  
     
-    <!--  -->

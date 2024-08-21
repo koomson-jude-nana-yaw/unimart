@@ -48,11 +48,16 @@
 .product-image-container {
   width: 150px;
   height: 150px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .product-image-container img {
   width: inherit;
+  transition: all 0.3s ease-in;
+}
+
+.product-image-container img:hover {
+  transform: scale(1.2);
 }
 
 /* -----------------------------------------------------------  */

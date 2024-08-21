@@ -1,0 +1,135 @@
+.product-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.add-product-text {
+  padding: 30px 0;
+  font-size: 2rem;
+}
+
+.add-product-btn {
+  background: #010196;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 30px;
+}
+
+.add-product-form-container,
+.update-product-form-container {
+  width: 600px;
+  margin: 20px auto;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px #cccccc;
+}
+
+.form-text {
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 20px 0;
+}
+.input-item,
+.select-item,
+.submit-item,
+.update-item {
+  margin: 15px auto;
+  border: 1px solid #000000;
+  border-radius: 30px;
+}
+
+.input-item input,
+.select-item select,
+.submit-item input,
+.update-item input {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 30px;
+  background: none;
+}
+
+.submit-item,
+.update-item {
+  background: #ff0000;
+  border: none;
+}
+
+.submit-item input,
+.update-item input {
+  color: #ffffff;
+}
+
+.update-item {
+  background: #010196;
+}
+
+/* ---------------------------------------- */
+.list-header-container,
+.list-container {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; */
+}
+
+.list-header-container {
+  background: #f7bebe;
+}
+.list-header-item,
+.list-item {
+  width: 200px;
+  padding: 10px 15px;
+  margin-right: 10px;
+}
+
+.list-header-item:nth-child(1),
+.list-item:nth-child(1) {
+  width: 25%;
+  /* background: #ff0000; */
+}
+
+.list-container:nth-of-type(even) {
+  background: #f8f6f6;
+}
+
+.list-item:nth-child(1) {
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: center;
+}
+
+.list-item:nth-child(1) img {
+  width: 80px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+/* -----------------------------------------------------------  */
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+}
+
+/*  */
+@media screen and (max-width: 992px) {
+}
+
+/*  */
+@media screen and (max-width: 768px) {
+}
+
+/*  */
+@media screen and (max-width: 540px) {
+  .add-product-form-container,
+  .update-product-form-container {
+    width: 100%;
+  }
+  .list-header-container,
+  .list-container {
+    display: none;
+  }
+}

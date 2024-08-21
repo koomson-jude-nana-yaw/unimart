@@ -30,7 +30,7 @@
 
 
             <script>
-                document.querySelector('.orders-history').classList.add('menu-active');
+                document.querySelector('.notification').classList.add('menu-active');
             </script>
 
 

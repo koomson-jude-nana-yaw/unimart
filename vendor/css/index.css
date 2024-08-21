@@ -1,5 +1,26 @@
+.page-container {
+  display: flex;
+  align-items: self-start;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.side-menu-container {
+  width: 20%;
+  /* height: 100vh; */
+  background-color: rgb(255, 255, 255);
+}
+
+.page-item-wrapper {
+  width: 80%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+/* ------------------------------------------------ */
 .dashboard-text-container {
   padding: 50px 0;
+  margin: 0 50px;
 }
 
 .dashboard-text-container h2 {

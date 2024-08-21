@@ -63,6 +63,22 @@
                 <!--  -->
                 <!--  -->
                 <div class="input-item">
+                  <input type="text" name="first_name" placeholder="First Names" autocomplete="off">
+                  <span class="form-icon">
+                    <i class="fas fa-user-circle"></i>
+                  </span>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="input-item">
+                  <input type="text" name="last_name" placeholder="Last Name" autocomplete="off">
+                  <span class="form-icon">
+                    <i class="fas fa-user-circle"></i>
+                  </span>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="input-item">
                   <input type="text" name="email" placeholder="Your Email" autocomplete="off">
                   <span class="form-icon">
                     <i class="fas fa-envelope"></i>
@@ -74,6 +90,22 @@
                   <input type="text" name="phone_number" placeholder="Phone Number" autocomplete="off">
                   <span class="form-icon">
                     <i class="fas fa-phone"></i>
+                  </span>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="input-item">
+                  <input type="text" name="location" placeholder="Location (Ex: Round Palace, Ayensu)" autocomplete="off">
+                  <span class="form-icon">
+                    <i class="fas fa-location"></i>
+                  </span>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="input-item">
+                  <input type="text" name="shop_name" placeholder="Shop Name" autocomplete="off">
+                  <span class="form-icon">
+                    <i class="fas fa-store"></i>
                   </span>
                 </div>
                 <!--  -->

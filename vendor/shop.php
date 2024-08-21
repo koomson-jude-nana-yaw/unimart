@@ -1,8 +1,14 @@
 <?php 
     include './header.php';
 ?>
+    <div class="page-container">
+        <?php
+            include_once 'side_menu.php';
+    ?>
 
-    <div class="shop-details-container">
+    <div class="page-item-wrapper">
+
+        <div class="shop-details-container">
         <div class="profile-image-container">
             <img src="../media/profile_images/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="profile image">
         </div>
@@ -11,8 +17,8 @@
         <!--  -->
 
         <div class="shop-name-container">
-            <h2>DAAKYE</h2>
-            <p>Amamoma . 36 Products</p>
+            <h2><?= ucfirst($_SESSION['shop_name']); ?></h2>
+            <p><?= ucfirst($_SESSION['location']); ?> . 36 Products</p>
         </div>
     </div>
     <h3 class="shop-products-text">Shop products (36) </h3>
@@ -35,7 +41,7 @@
             </div>
             <h2 class="product-name">Phone</h2>
             <p class="product-price">GH&#8373; 2000.00</p>
-            <a href="add_product.php"> <i class="fas fa-edit"></i> Edit Product </a>
+            <a href="product.php"> <i class="fas fa-edit"></i> Edit Product </a>
         </div>
         <!--  -->
         <div class="product-wrapper">
@@ -44,7 +50,7 @@
             </div>
             <h2 class="product-name">Phone</h2>
             <p class="product-price">GH&#8373; 2000.00</p>
-            <a href="add_product.php"> <i class="fas fa-edit"></i> Edit Product </a>
+            <a href="product.php"> <i class="fas fa-edit"></i> Edit Product </a>
 
         </div>
         <!--  -->
@@ -54,7 +60,7 @@
             </div>
             <h2 class="product-name">Phone</h2>
             <p class="product-price">GH&#8373; 2000.00</p>
-            <a href="add_product.php"> <i class="fas fa-edit"></i> Edit Product </a>
+            <a href="product.php"> <i class="fas fa-edit"></i> Edit Product </a>
 
         </div>
         <!--  -->
@@ -64,7 +70,7 @@
             </div>
             <h2 class="product-name">Phone</h2>
             <p class="product-price">GH&#8373; 2000.00</p>
-            <a href="add_product.php"> <i class="fas fa-edit"></i> Edit Product </a>
+            <a href="product.php"> <i class="fas fa-edit"></i> Edit Product </a>
 
         </div>
         <!--  -->
@@ -74,7 +80,7 @@
             </div>
             <h2 class="product-name">Phone</h2>
             <p class="product-price">GH&#8373; 2000.00</p>
-            <a href="add_product.php"> <i class="fas fa-edit"></i> Edit Product </a>
+            <a href="product.php"> <i class="fas fa-edit"></i> Edit Product </a>
 
         </div>
         <!--  -->
@@ -84,7 +90,7 @@
             </div>
             <h2 class="product-name">Phone</h2>
             <p class="product-price">GH&#8373; 2000.00</p>
-            <a href="add_product.php"> <i class="fas fa-edit"></i> Edit Product </a>
+            <a href="product.php"> <i class="fas fa-edit"></i> Edit Product </a>
 
         </div>
         <!--  -->
@@ -95,17 +101,24 @@
             <h2 class="product-name">Phone</h2>
             <p class="product-price">GH&#8373; 2000.00</p>
             <span>
-                <a href="add_product.php"> <i class="fas fa-edit"></i> Edit Product </a>
+                <a href="product.php"> <i class="fas fa-edit"></i> </a>
             </span>
             <span>
-                <form action="./config/delete_product.php" method="post" >
-                    <input type="hidden" value="12" name="product_id">
-                    <button type="submit" name="delete">DELETE</button>
-                </form>
+                    <a href="config/delete_product.php?product_id=412">  <i class="fas fa-trash"></i></a>
             </span>
         </div>
 
     </div>
+             <script>
+                document.querySelector('.view-shop').classList.add('menu-active');
+            </script>
+    <?php 
+    include 'footer.php';
+    include '../includes/footer.php'; 
+    ?>
+
+    </div>
+</div>
 
 
 
@@ -135,5 +148,3 @@
 
 
 
-<?php include 'footer.php' ?>
-<?php include '../includes/footer.php' ?>

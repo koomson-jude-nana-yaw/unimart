@@ -34,8 +34,8 @@ ul {
   background: #ffffff;
   width: 100%;
   padding: 20px 0;
-
   box-shadow: 0px 1px 3px #000000;
+  z-index: 20px;
 }
 
 /* unimart logo styling */
@@ -236,9 +236,6 @@ ul {
 
 /* Media Queries */
 @media screen and (max-width: 1200px) {
-  .body-container {
-    /* background: green; */
-  }
   /*  */
 
   .sign-in-btn,
@@ -250,17 +247,10 @@ ul {
 
 /*  */
 @media screen and (max-width: 992px) {
-  .body-container {
-    /* background: yellow; */
-  }
 }
 
 /*  */
 @media screen and (max-width: 768px) {
-  .body-container {
-    /* background: brown; */
-  }
-
   .unimart-logo a {
     border-color: #1d00c4;
   }
@@ -278,9 +268,6 @@ ul {
 
 /*  */
 @media screen and (max-width: 540px) {
-  .body-container {
-    /* background: orange; */
-  }
   .nav-links {
     display: none;
   }

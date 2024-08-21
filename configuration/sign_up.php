@@ -10,6 +10,10 @@ if (isset($_POST['submit'])) {
     $username = strtolower(validate_text_input($_POST['username']));
     $email = strtolower(validate_text_input($_POST['email']));
     $phone_number = validate_text_input($_POST['phone_number']);
+    $first_name = validate_text_input($_POST['first_name']);
+    $last_name = validate_text_input($_POST['last_name']);
+    $location = validate_text_input($_POST['location']);
+    $shop_name = validate_text_input($_POST['shop_name']);
     $password = validate_text_input($_POST['password']);
     $confirm_password = validate_text_input($_POST['confirm_password']);
     $terms_of_service = validate_text_input($_POST['terms_of_service']);
@@ -20,7 +24,7 @@ if (isset($_POST['submit'])) {
     // ----------------------------------------------------
 
     if (empty($username)) {
-        redirect("../includes/signup.php", "error=Username is empty");
+        redirect("../includes/signup.php", "error=Username is required");
         exit();
     }
 
@@ -36,9 +40,21 @@ if (isset($_POST['submit'])) {
     // ------------------------
 
     if (empty($email)) {
-        redirect("../includes/signup.php", "error=Email is empty");
+        redirect("../includes/signup.php", "error=Email is required");
         exit();
     }
+
+    if (empty($first_name)) {
+        redirect("../includes/signup.php", "error=First Name is required");
+        exit();
+    }
+
+    if (empty($last_name)) {
+        redirect("../includes/signup.php", "error=Last Name is required");
+        exit();
+    }
+
+    
 
     if (!filter_var($email,FILTER_VALIDATE_EMAIL)) {
         redirect("../includes/signup.php", "error=Invalid email");
@@ -58,12 +74,22 @@ if (isset($_POST['submit'])) {
     // ----------------------
 
     if (empty($phone_number)) {
-        redirect("../includes/signup.php", "error=phone number is empty");
+        redirect("../includes/signup.php", "error=phone number is required");
+        exit();
+    }
+
+    if (empty($shop_name)) {
+        redirect("../includes/signup.php", "error=Shop Name is required");
+        exit();
+    }
+
+    if (empty($location)) {
+        redirect("../includes/signup.php", "error=Location is required");
         exit();
     }
 
     if (empty($password)) {
-        redirect("../includes/signup.php", "error=Password is empty");
+        redirect("../includes/signup.php", "error=Password is required");
         exit();
     }
 

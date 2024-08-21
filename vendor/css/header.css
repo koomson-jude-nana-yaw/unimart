@@ -1,3 +1,10 @@
+* {
+  box-sizing: 0;
+}
+body {
+  font-family: Poppins;
+}
+
 .nav-btn-container {
   display: none;
 }
@@ -119,13 +126,16 @@
 /*  */
 @media screen and (max-width: 768px) {
   .menu-list-container {
-    right: 20px;
+    right: 30px;
+  }
+  .search-container {
+    display: none;
   }
 }
 
 /*  */
 @media screen and (max-width: 540px) {
-  .search-container {
-    display: none;
+  .account-menu-container {
+    font-size: 0.8rem;
   }
 }
