@@ -116,6 +116,8 @@
                 <li><a href="pages/shops.php" class="side-navbar-item">Shops</a></li>
                 <li><a href="pages/about_us.php" class="side-navbar-item">About Us</a></li>
                 <li><a href="pages/contact_us.php" class="side-navbar-item">Contatct Us</a></li>
+                <li><a href="../includes/signin.php" class="side-navbar-item">Sign In</a></li>
+                <li><a href="../includes/signup.php" class="side-navbar-item">Sign Up</a></li>
             </ul>
             <!--  -->
             <ul class="socials-group">
@@ -346,9 +348,16 @@
 
 
 
+
+
+
+
+
+<!-- ------------------------------ -->
 <div class="footer-container">
             <div class="top-container">
-
+                <span><a href="../includes/signin.php" class="footer-signin-btn">Sign In</a></span>
+                <span><a href="../includes/signup.php" class="footer-signup-btn">Sign Up</a></span>
             </div>
             <!--  -->
             <!--  -->

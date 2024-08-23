@@ -19,7 +19,7 @@ ul {
 }
 
 .body-container {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
   /* border-right: 3px solid #1d00c4; */
   /* border-left: 3px solid #1d00c4; */
@@ -46,9 +46,9 @@ ul {
   font-family: Poppins, serif;
   font-weight: bolder;
   color: #1d00c4;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-radius: 50px;
-  padding: 10px 15px;
+  padding: 5px 10px;
   border: 1px solid #ffffff;
   transition: all ease-in 0.3s;
 }
@@ -74,10 +74,9 @@ ul {
 }
 
 .nav-links a {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin: 2px;
   color: #000000;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 10px 15px;
   transition: all ease-in 0.3s;
   border: 1px solid #ffffff;
@@ -121,8 +120,8 @@ ul {
 .search-item input {
   border: #1d00c4 1px solid;
   border-radius: 50px;
-  padding: 10px 15px;
-  font-size: 0.9rem;
+  padding: 5px 10px;
+  font-size: 0.8rem;
   outline: none;
   /* display: none; */
 }
@@ -131,7 +130,7 @@ ul {
   background: none;
   border: none;
   margin: 0 10px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 
@@ -149,7 +148,7 @@ ul {
 
 .sign-up-btn a,
 .sign-in-btn a {
-  font-size: 0.9rem;
+  font-size: 0.8 rem;
   color: #1d00c4;
   border-radius: 50px;
   border: 1px solid #1d00c4;
@@ -182,11 +181,12 @@ ul {
 
 .sidebar-close-btn {
   position: absolute;
+  font-size: 0.8rem;
   top: 0;
-  right: 230px;
+  right: 290px;
   cursor: pointer;
   z-index: 50;
-  transform: rotate(90deg);
+  /* transform: rotate(90deg); */
   color: #b60202;
   padding: 20px;
 }
@@ -861,16 +861,28 @@ ul {
 /* Media Queries */
 @media screen and (max-width: 1200px) {
   /*  */
-
-  .sign-in-btn,
-  .sign-up-btn,
-  .contact-us-container {
-    display: none;
-  }
 }
 
 /*  */
 @media screen and (max-width: 992px) {
+  .nav-links a {
+    margin: 2px;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+
+  /* .search-item input {
+    width: 100px;
+  } */
+  .sign-up-btn a,
+  .sign-in-btn a {
+    font-size: 0.5rem;
+    padding: 5px 10px;
+  }
+
+  .nav-links a {
+    font-size: 0.5rem;
+  }
 }
 
 /*  */
@@ -878,13 +890,18 @@ ul {
   .unimart-logo a {
     border-color: #1d00c4;
   }
+  .sign-in-btn,
+  .sign-up-btn,
+  .contact-us-container {
+    display: none;
+  }
   /*  */
 
   .sidebar-open-btn {
     display: block;
   }
 
-  .nav-links li:nth-child(5),
+  /* .nav-links li:nth-child(5), */
   .search-container {
     display: none;
   }

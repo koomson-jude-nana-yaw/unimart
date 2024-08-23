@@ -1,0 +1,13 @@
+.delivered a {
+  font-size: 1.3rem;
+  color: #ff0000;
+}
+
+.delivered a:hover,
+.delivered-done {
+  color: #017929;
+}
+
+.orders-page-header {
+  padding: 0 10px;
+}

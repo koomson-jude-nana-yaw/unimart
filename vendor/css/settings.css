@@ -1,0 +1,120 @@
+.settings-page-header {
+  padding: 15px;
+  margin: 20px 0;
+  /* background: yellow; */
+}
+
+.avatar-container,
+.profile-container,
+.change-password-container {
+  padding: 20px;
+  box-shadow: 0 0 5px #e2e2e2;
+  margin: 20px 0;
+}
+
+.change-avatar-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  width: 100%;
+}
+
+.change-form-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+.form-input-item {
+  margin: 0 5px;
+}
+
+.form-submit-item input {
+  background: #ff0000;
+  border: none;
+  padding: 15px 30px;
+  color: #ffffff;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.profile-text,
+.password-text {
+  padding: 20px 0;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.profile-form-container,
+.password-form-container {
+  width: 90%;
+}
+
+.profile-form-item,
+.password-form-item {
+  margin: 20px 0;
+}
+
+.profile-form-item p,
+.password-form-item p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.profile-form-item input,
+.password-form-item input {
+  outline: none;
+  font-size: 1.2rem;
+  padding: 10px 5px;
+  width: 500px;
+}
+
+.profile-submit-item input,
+.password-submit-item input {
+  background: #ff0000;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  padding: 20px 10px;
+  cursor: pointer;
+}
+
+/* -----------------------------------------------------------  */
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+}
+
+/*  */
+@media screen and (max-width: 992px) {
+}
+
+/*  */
+@media screen and (max-width: 768px) {
+  .profile-form-item input,
+  .password-form-item input {
+    width: 100%;
+  }
+
+  .change-avatar-form {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+
+  .form-input-item {
+    margin: 15px 0;
+  }
+  .profile-submit-item input,
+  .password-submit-item input,
+  .form-submit-item input {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: normal;
+  }
+}
+
+/*  */
+@media screen and (max-width: 540px) {
+}
