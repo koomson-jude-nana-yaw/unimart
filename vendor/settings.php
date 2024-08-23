@@ -18,12 +18,12 @@
 
             <form enctype="multipart/form-data" action="config/change_avatar.php" method="post" class="change-avatar-form">
                 <div class="change-form-item">
-                    <img src="../media/profile_images/<?php if (isset($_SESSION['image'])) {
-                        echo $_SESSION['image'];
+                    <img src="../media/profile_images/<?php if (!empty($vendors['imageURL'])) {
+                        echo $vendors['imageURL'];
                     } else{ echo 'bbb.png'; } ?>" alt="profile picture">
                 </div>
                 <!--  -->
-                <input type="hidden" name="vender_id" value="<?= $_SESSION['vender_id'] ?>">
+                <input type="hidden" name="vender_id" value="<?= $vender_id ?>">
                 <div class="form-input-item ">
                     <input type="file" name="avatar" >
                 </div>
@@ -43,46 +43,46 @@
             <!--  -->
             <form action="config/update_vendor.php" method="post" class="profile-form-container">
                 <!--  -->
-                    <input type="hidden" name="vender_id" value="<?= $_SESSION['vender_id'] ?>">
+                    <input type="hidden" name="vender_id" value="<?= $vender_id ?>">
                 <div class="profile-form-item">
                     <p>First Name</p>
-                    <input type="text" name="first_name" value="<?= ucfirst($_SESSION['first_name'])?>" autocomplete="off">
+                    <input type="text" name="first_name" value="<?= ucfirst($vendors['first_name'])?>" autocomplete="off">
                 </div>
                 <!--  -->
                 <!--  -->
                 <div class="profile-form-item">
                     <p>Last Name</p>
-                    <input type="text" name="last_name" value="<?= ucfirst($_SESSION['last_name'])?>" autocomplete="off">
+                    <input type="text" name="last_name" value="<?= ucfirst($vendors['last_name'])?>" autocomplete="off">
                 </div>
                 <!--  -->
                 <!--  -->
                 <div class="profile-form-item">
                     <p>Shop Name</p>
-                    <input type="text" name="shop_name" value="<?= ucfirst($_SESSION['shop_name'])?>" autocomplete="off">
+                    <input type="text" name="shop_name" value="<?= ucfirst($vendors['shop_name'])?>" autocomplete="off">
                 </div>
                 <!--  -->
                 <!--  -->
                 <div class="profile-form-item">
                     <p>Username</p>
-                    <input type="text" name="username" value="<?= ucfirst($_SESSION['username']) ?>" autocomplete="off">
+                    <input type="text" name="username" value="<?= ucfirst($vendors['username']) ?>" autocomplete="off">
                 </div>
                 <!--  -->
                 <!--  -->
                 <div class="profile-form-item">
                     <p>Email</p>
-                    <input type="text" name="email" value="<?= $_SESSION['email'] ?>" autocomplete="off">
+                    <input type="text" name="email" value="<?= $vendors['email'] ?>" autocomplete="off">
                 </div>
                 <!--  -->
                 <!--  -->
                 <div class="profile-form-item">
                     <p>Phone Number</p>
-                    <input type="text" name="phone_number" value="<?= $_SESSION['phone_number'] ?>" autocomplete="off">
+                    <input type="text" name="phone_number" value="<?= $vendors['phone_number'] ?>" autocomplete="off">
                 </div>
                 <!--  -->
                 <!--  -->
                 <div class="profile-form-item">
                     <p>Location</p>
-                    <input type="text" name="location" value="<?= ucfirst($_SESSION['location']) ?>" autocomplete="off">
+                    <input type="text" name="location" value="<?= ucfirst($vendors['location']) ?>" autocomplete="off">
                 </div>
                 <!--  -->
                 <!--  -->
@@ -100,7 +100,7 @@
             </h2>
             <form action="config/change_password.php" method="post" class="change-password-form">
                 <!--  -->
-                    <input type="hidden" name="vender_id" value="<?= $_SESSION['vender_id'] ?>" >
+                    <input type="hidden" name="vender_id" value="<?= $vender_id ?>" >
                 <div class="password-form-item">
                     <p>Old Password</p>
                     <input type="password" name="old_password" placeholder="Old Password">

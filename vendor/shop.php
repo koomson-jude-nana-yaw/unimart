@@ -10,8 +10,8 @@
 
         <div class="shop-details-container">
         <div class="profile-image-container">
-            <img src="../media/profile_images/<?php if (isset($_SESSION['image'])) {
-                        echo $_SESSION['image'];
+            <img src="../media/profile_images/<?php if (!empty($vendors['imageURL'])) {
+                        echo $vendors['imageURL'];
                     } else{ echo 'bbb.png'; } ?>" alt="profile image">
         </div>
 
@@ -19,84 +19,37 @@
         <!--  -->
 
         <div class="shop-name-container">
-            <h2><?= ucfirst($_SESSION['shop_name']); ?></h2>
-            <p><?= ucfirst($_SESSION['location']); ?> . 36 Products</p>
+            <h2><?= ucfirst($vendors['shop_name']); ?></h2>
+            <p><?= ucfirst($vendors['location']); ?>. <?= $vender_products_count ?> Products</p>
         </div>
     </div>
-    <h3 class="shop-products-text">Shop products (36) </h3>
+    <h3 class="shop-products-text">Shop products (<?= $vender_products_count ?>) </h3>
     <!--  -->
 
+
     <div class="shop-products-container">
-        <div class="product-wrapper">
-            <div class="product-image-container">
-                <img src="../media/product_pictures/afc3d88afbdc1a46dfa0b1f1f279b4d5.jpg" alt="product image">
+    
+        <?php 
+        if ($vender_products_count == 0) {
+            echo '<p>No product in shop</p>';
+        } else{
+        foreach($vender_products as $product){ ?>
+            <div class="product-wrapper">
+                <div class="product-image-container">
+                    <img src="../media/product_pictures/<?= $product->image_URL ?>" alt="product image">
+                </div>
+                <h2 class="product-name"><?= $product->product_name ?></h2>
+                <p class="product-price">GH&#8373; <?= $product->price ?></p>
+                <a href="add_product.php"> <i class="fas fa-edit"></i> Edit Product </a>
+                <span>
+                    <a href="config/delete_product.php?product_id=<?= $product->product_id ?>">  <i class="fas fa-trash"></i></a>
+                </span>
             </div>
-            <h2 class="product-name">Phone</h2>
-            <p class="product-price">GH&#8373; 2000.00</p>
-            <a href="add_product.php"> <i class="fas fa-edit"></i> Edit Product </a>
-
-        </div>
+        <?php } } ?>
         <!--  -->
-        <div class="product-wrapper">
-            <div class="product-image-container">
-                <img src="../media/product_pictures/afc3d88afbdc1a46dfa0b1f1f279b4d5.jpg" alt="product image">
-            </div>
-            <h2 class="product-name">Phone</h2>
-            <p class="product-price">GH&#8373; 2000.00</p>
-            <a href="product.php"> <i class="fas fa-edit"></i> Edit Product </a>
-        </div>
+        
         <!--  -->
-        <div class="product-wrapper">
-            <div class="product-image-container">
-                <img src="../media/product_pictures/afc3d88afbdc1a46dfa0b1f1f279b4d5.jpg" alt="product image">
-            </div>
-            <h2 class="product-name">Phone</h2>
-            <p class="product-price">GH&#8373; 2000.00</p>
-            <a href="product.php"> <i class="fas fa-edit"></i> Edit Product </a>
-
-        </div>
-        <!--  -->
-        <div class="product-wrapper">
-            <div class="product-image-container">
-                <img src="../media/product_pictures/afc3d88afbdc1a46dfa0b1f1f279b4d5.jpg" alt="product image">
-            </div>
-            <h2 class="product-name">Phone</h2>
-            <p class="product-price">GH&#8373; 2000.00</p>
-            <a href="product.php"> <i class="fas fa-edit"></i> Edit Product </a>
-
-        </div>
-        <!--  -->
-        <div class="product-wrapper">
-            <div class="product-image-container">
-                <img src="../media/product_pictures/afc3d88afbdc1a46dfa0b1f1f279b4d5.jpg" alt="product image">
-            </div>
-            <h2 class="product-name">Phone</h2>
-            <p class="product-price">GH&#8373; 2000.00</p>
-            <a href="product.php"> <i class="fas fa-edit"></i> Edit Product </a>
-
-        </div>
-        <!--  -->
-        <div class="product-wrapper">
-            <div class="product-image-container">
-                <img src="../media/product_pictures/afc3d88afbdc1a46dfa0b1f1f279b4d5.jpg" alt="product image">
-            </div>
-            <h2 class="product-name">Phone</h2>
-            <p class="product-price">GH&#8373; 2000.00</p>
-            <a href="product.php"> <i class="fas fa-edit"></i> Edit Product </a>
-
-        </div>
-        <!--  -->
-        <div class="product-wrapper">
-            <div class="product-image-container">
-                <img src="../media/product_pictures/afc3d88afbdc1a46dfa0b1f1f279b4d5.jpg" alt="product image">
-            </div>
-            <h2 class="product-name">Phone</h2>
-            <p class="product-price">GH&#8373; 2000.00</p>
-            <a href="product.php"> <i class="fas fa-edit"></i> Edit Product </a>
-
-        </div>
-        <!--  -->
-        <div class="product-wrapper">
+        <!-- <div class="product-wrapper">
             <div class="product-image-container">
                 <img src="../media/product_pictures/afc3d88afbdc1a46dfa0b1f1f279b4d5.jpg" alt="product image">
             </div>
@@ -108,9 +61,12 @@
             <span>
                     <a href="config/delete_product.php?product_id=412">  <i class="fas fa-trash"></i></a>
             </span>
-        </div>
+        </div> -->
 
     </div>
+
+
+
              <script>
                 document.querySelector('.view-shop').classList.add('menu-active');
             </script>

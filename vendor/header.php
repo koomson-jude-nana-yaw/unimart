@@ -12,10 +12,14 @@
 require_once '../database/connection_instance.php';
 require_once '../includes/functions.php';
 
-// $vendor_select_query = "SELECT * FROM vendors WHERE vender_id = $_SESSION['vender_id'];";
-// $vendor_stmt = $connection->prepare($vendor_select_query);
-// $vendor_stmt->execute();
-// $vendors = $vendor_stmt->fetchAll();
+$vender_id = $_SESSION['vender_id'];
+
+// Vendor Data
+
+$vendor_select_query = "SELECT * FROM vendors WHERE vender_id = $vender_id;";
+$vendor_stmt = $connection->prepare($vendor_select_query);
+$vendor_stmt->execute();
+$vendors = $vendor_stmt->fetch(PDO::FETCH_ASSOC);
 
 
 
@@ -23,9 +27,13 @@ require_once '../includes/functions.php';
 
 
 
+// vendor products
+$vender_products_query = "SELECT * FROM products WHERE product_owner = $vender_id;";
+$vender_products_stmt = $connection->prepare($vender_products_query);
+$vender_products_stmt->execute();
+$vender_products = $vender_products_stmt->fetchAll();
+$vender_products_count = $vender_products_stmt->rowCount();
 
-
-// fetch data
 
 
 
@@ -107,8 +115,8 @@ require_once '../includes/functions.php';
             <!-- --------------------- -->
             <div class="account-menu-container">
                 <div class="vendor-image">
-                    <img src="../media/profile_images/<?php if (isset($_SESSION['image'])) {
-                        echo $_SESSION['image'];
+                    <img src="../media/profile_images/<?php if (!empty($vendors['imageURL'])) {
+                        echo $vendors['imageURL'];
                     } else{ echo 'bbb.png'; } ?>" alt="picture">
                 </div>
                 <!--  -->
@@ -127,8 +135,8 @@ require_once '../includes/functions.php';
                     </ul>
                 </div>
                 <div class="vendor-name-container">
-                    <h1><?= ucfirst($_SESSION['first_name'] . ' ' . $_SESSION['last_name']); ?> <span> <i class="fas fa-arrow-circle-down"></i></span> </h1>
-                    <p><?= ucfirst($_SESSION['shop_name']); ?></p>
+                    <h1><?= ucfirst($vendors['first_name'] . ' ' . $vendors['last_name']); ?> <span> <i class="fas fa-arrow-circle-down"></i></span> </h1>
+                    <p><?= ucfirst($vendors['shop_name']); ?></p>
                 </div>
                 
             </div>

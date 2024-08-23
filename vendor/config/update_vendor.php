@@ -71,7 +71,7 @@ if (isset($_POST['submit'])) {
    
 
     // ------------------------------------------------------
-    $update_query = "UPDATE vendors SET (`last_name` = :last_name, `first_name` = :first_name,`username` = :username,`email` = :email,`phone_number` = :phone_number, `location` = :loc, `shop_name` = :shop_name) WHERE `vender_id` = :vender_id";
+    $update_query = "UPDATE vendors SET `last_name` = :last_name, `first_name` = :first_name,`username` = :username,`email` = :email,`phone_number` = :phone_number, `location` = :loc, `shop_name` = :shop_name WHERE `vender_id` = :vender_id";
     $update_stmt = $connection->prepare($update_query);
 
 

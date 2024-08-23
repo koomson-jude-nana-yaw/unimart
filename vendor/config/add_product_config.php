@@ -83,8 +83,6 @@
         exit();
     }
 
-    
-
 
         redirect('../product.php','success=Product added successfully.');
         exit();
