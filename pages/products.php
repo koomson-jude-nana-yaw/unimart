@@ -29,20 +29,21 @@
 <section class="main-container">
 
   <!-- product categories -->
-  <ul class="product-categories">
-    <li>All</li>
-    <li>Supermarket</li>
-    <li>Foods</li>
-    <li>Clothing</li>
-    <li>Phones & Tablets</li>
-    <li>Health & Beauty·</li>
-    <li>Home & Office</li>
-    <li>Appliances</li>
-    <li>Electronics</li>
-    <li>Gaming</li>
-    <li>Computing</li>
-    <li>Others</li>
-  </ul>
+  <div class="categories-container">
+    <ul class="product-categories">
+      <li>All</li>
+      <li>Foods</li>
+      <li>Clothing</li>
+      <li>Phones & Tablets</li>
+      <li>Health & Beauty·</li>
+      <li>Home & Office</li>
+      <li>Appliances</li>
+      <li>Electronics</li>
+      <li>Gaming</li>
+      <li>Computing</li>
+      <li>Others</li>
+    </ul>
+  </div>
 
   <!-- top bar -->
   <div class="top-bar">

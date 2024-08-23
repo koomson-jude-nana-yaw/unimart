@@ -1,0 +1,59 @@
+.top-bar{
+    background: #E70000;
+}
+
+
+.image-container {
+  width: 100%;
+  height: 240px;
+  border-radius: 100%;
+}
+
+.image-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: #766A74;
+}
+
+.service-type {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #988B93;
+}
+
+.owner-name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #373737;
+}
+
+.contact {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #373737;
+}
+
+
+.background {
+  background: #E70000;
+}
