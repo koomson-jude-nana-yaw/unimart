@@ -28,3 +28,24 @@ sidebarCloseBtn.addEventListener("click", () => {
     sidebarOpenBtn.classList.remove("active");
   }
 });
+
+
+// handle product scrolling
+const prevBtn = document.querySelector('.left-btn');
+const nextBtn = document.querySelector('.right-btn');
+const productsContainer = document.querySelector('.products');
+
+const scrollAmount = 300;
+
+prevBtn.addEventListener('click', () =>{
+  productsContainer.scrollTo({
+    left: productsContainer.scrollLeft - scrollAmount,
+    behavior: "smooth"
+  })
+})
+nextBtn.addEventListener('click', () =>{
+  productsContainer.scrollTo({
+    left: productsContainer.scrollLeft + scrollAmount,
+    behavior: "smooth"
+  })
+})

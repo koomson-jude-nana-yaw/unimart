@@ -136,10 +136,208 @@
 
 
 
-       
+       <!-- ----------------------------------------------------content section------------------------------------------- -->
+    <div class="main-container">
+        
+        <!-- showcase -->
+        <div class="showcase">
+
+            <!--  -->
+            <div class="flex-column-left">
+
+                <!-- header -->
+                <div class="header">
+                    <h1>Best Online Store Shop and Service Provider</h1>
+                    <div class="actions">
+                        <div class="explore-btn">Explore</div>
+                        <img src="./images/icons/1.webp" alt="">
+                    </div>
+                </div>
+
+                <!-- What makes us pro -->
+                <div class="what-makes-us-pro">
+                    <h2>What Make Us Pro?</h2>
+                    <ul>
+                        <li>
+                            <img src="./images/icons/mark.png" alt="">
+                            <p>100% Authentic Products</p>
+                        </li>
+                        <li>
+                            <img src="./images/icons/mark.png" alt="">
+                            <p>First of a kind</p>
+                        </li>
+                        <li>
+                            <img src="./images/icons/mark.png" alt="">
+                            <p>Nationwide Delivery</p>
+                        </li>
+                        <li>
+                            <img src="./images/icons/mark.png" alt="">
+                            <p>Safe Payments</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--  -->
+            <div class="flex-column-right">
+                <div class="column-left">
+                    <div class="background"></div>
+                    <img src="./images/products/MG_9335.jpg" alt="">
+                </div>
+                <div class="column-right">
+                    <div class="symbol">
+                        <img src="./images/icons/star.png" alt="">
+                    </div>
+                    <div class="rectangle">
+                        <div class="background"></div>
+                        <img src="./images/products/14159014_MzAwLTQwMC0wNzliYjdjZWRiLTI.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
+        <!-- new products section -->
+        <div class="new-products-container">
 
+            <!-- header -->
+            <div class="new-p-header">
+                <h1>Newest Products</h1>
+
+                <div class="controllers">
+                    <div class="left-btn">
+                        <i class="fa fa-angle-left icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="right-btn">
+                        <i class="fa fa-angle-right icon" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- products -->
+            <div class="products">
+                <ul class="wrapper">
+                    <li>
+                        <img src="./images/products/girl.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/products/images.jpeg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/products/white_sneaker.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/products/68097_1668607420.webp" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/bathroom/e11d8d462de1b8d72804d9eab49043f2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/home decor/Versace black white hot luxury window curtain for child bedroom living room window decor,curtain waterproof with sun block.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/kitchensets/20 Favorite Kitchen Gadgets Under $30 - Kelley Nan.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- about us -->
+        <div class="about-us">
+
+            <!-- header -->
+            <h2 class="about-us-header">About Us</h2>
+
+            <div class="about-content">
+                <div class="text-content">
+                    <h1>Shop in style, Shop safe & Find reliable service</h1>
+                    <p>We are the first and the Best. <br/> Approved </p>
+                </div>
+                <div class="image-content">
+                    <img src="./images/products/headset.jpg" alt="">
+                </div>
+            </div>
+            <div class="about-btn">
+                <p>Explore Now</p>
+                <i class="fa fa-angle-right right-angle"></i>
+            </div>
+        </div>
+
+
+        <!-- Most popular items -->
+        <div class="new-products-container popular-items">
+
+            <!-- header -->
+            <div class="new-p-header">
+                <h1 style = 'color: #482BE7; font-size: 35px'>Most Popular Items</h1>
+            </div>
+
+            <!-- products -->
+            <div class="products">
+                <ul class="wrapper">
+                    <li>
+                        <img src="./images/products/girl.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/products/images.jpeg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/products/white_sneaker.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/products/68097_1668607420.webp" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/bathroom/e11d8d462de1b8d72804d9eab49043f2.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/home decor/Versace black white hot luxury window curtain for child bedroom living room window decor,curtain waterproof with sun block.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/kitchensets/20 Favorite Kitchen Gadgets Under $30 - Kelley Nan.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+         <!-- Most popular services -->
+        <div class="new-products-container service">
+
+            <!-- header -->
+            <div class="new-p-header">
+                <h1 style = 'color: #482BE7; font-size: 35px'>Most Popular Services</h1>
+            </div>
+
+            <!-- products -->
+            <div class="products">
+                <ul class="wrapper" id = 'service'>
+                    <li>
+                        <img src="./images/service/happy-african-male-trader-food-260nw-2083822600.webp" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/service/Massage Therapy Student.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/service/haircut-81-1.jpeg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/service/image-african-man-foot-wearworkshop-260nw-1839497299.webp" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/service/Kelvin.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/service/laundry-facilities.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/service/istockphoto-1465634394-612x612.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
 
 
 
@@ -201,7 +399,7 @@
    </main>
   <!-- font awesome js -->
         <script src="fontawesome/js/all.js"></script>
-        <script src="js/index.js"></script>
+        <script src="js/index.js?v=<?= time();?>"></script>
 
 </body>
 </html>
