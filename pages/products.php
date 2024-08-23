@@ -207,44 +207,18 @@
         <div class="background"></div>
     </div>
     
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/smart home devices/Echo Dot with clock (5th generation, 2022 release) Bigger vibrant sound Wi-Fi and Bluetooth smart speaker and Alexa  Cloud Blue.jpg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="product-name">Wi-Fi and Bluetooth smart speaker and Alexa</span>
-        <span class="price">GHc 150.00</span>
-        <span class="items-left">100 items left</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/smart home devices/Echo Dot with clock (5th generation, 2022 release) Bigger vibrant sound Wi-Fi and Bluetooth smart speaker and Alexa  Cloud Blue.jpg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="product-name">Wi-Fi and Bluetooth smart speaker and Alexa</span>
-        <span class="price">GHc 150.00</span>
-        <span class="items-left">100 items left</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
   </div>
 </section>
 
 
 
+<div class="product-details-container">
+  <?php
 
+  include_once('../includes/product_details.php')
 
-
-
-
-
-
+  ?>
+</div>
 
 
 
@@ -253,3 +227,5 @@
 <?php 
   require_once '../includes/footer.php';
 ?>
+
+<script src="../js/products.js?v=<?= time();?>"></script>

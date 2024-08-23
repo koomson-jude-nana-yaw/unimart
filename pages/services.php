@@ -230,6 +230,13 @@
 
 
 
+<div class="product-details-container">
+  <?php
+
+  include_once('../includes/product_details.php')
+
+  ?>
+</div>
 
 
 
@@ -237,3 +244,5 @@
 <?php 
     require_once '../includes/footer.php';
 ?>
+
+<script src="../js/products.js?v=<?= time();?>"></script>

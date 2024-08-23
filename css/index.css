@@ -552,7 +552,6 @@ ul {
 .new-products-container{
   width: 100%;
   padding: 20px;
-  margin-top: 80px;
   display: flex;
   gap: 25px;
   flex-direction: column;
@@ -662,22 +661,24 @@ ul {
 /* about us */
 .about-us{
   width: 100%;
-  margin: 30px 0px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  background: linear-gradient(to right, blue, white);
+
 }
 
 .about-us .about-us-header{
   font-style: normal;
   font-weight: 600;
   margin-bottom: 20px;
-  font-size: 37.8px;
+  font-size: 32px;
   line-height: 46px;
   display: flex;
   align-items: center;
-  color: #482BE7;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 430px) {
@@ -688,7 +689,7 @@ ul {
 
 .about-us .about-content{
   width: 100%;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -707,7 +708,7 @@ ul {
 }
 
 .about-us .about-content .text-content{
-  width: 50%;
+  width: 55%;
   font-weight: 600;
   font-style: normal;
   display: flex;
@@ -723,7 +724,7 @@ ul {
   @media screen and (max-width: 430px) {
     .about-us .about-content .text-content{
       width: 100%;
-      gap: 20px;
+      gap: 30px;
       align-items: flex-start;
       justify-content: flex-start;
     }
@@ -733,7 +734,7 @@ ul {
 .about-us .about-content .text-content h1{
   font-size: 80px;
   line-height: 94px;
-  color: #2A1D1D;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 834px) {
@@ -751,9 +752,9 @@ ul {
 }
 
 .about-us .about-content .text-content p{
-  font-size: 25.0927px;
+  font-size: 20px;
   line-height: 30px;
-  color: #6D6161;
+  color: #ffffff;
 }
 
 
@@ -810,7 +811,7 @@ ul {
   width: 142px;
   height: 43px;
   box-sizing: border-box;
-  background: #482BE7;
+  background: linear-gradient(to right, blue, white);
   border-radius: 0px;
   display: flex;
   gap: 10px;
@@ -824,7 +825,7 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 12.5px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 

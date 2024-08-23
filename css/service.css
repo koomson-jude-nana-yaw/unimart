@@ -2,6 +2,10 @@
     background: #E70000;
 }
 
+.product{
+  cursor: pointer;
+}
+
 
 .image-container {
   width: 100%;

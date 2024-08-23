@@ -162,3 +162,11 @@ button {
   height: 9.564px;
   background: #482be7;
 }
+
+.product-details-container{
+  display: none;
+}
+
+.displayProductDetails{
+  display: block;
+}
