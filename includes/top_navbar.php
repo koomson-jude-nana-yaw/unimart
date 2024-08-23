@@ -97,6 +97,8 @@
                 <li><a href="../pages/shops.php" class="side-navbar-item">Shops</a></li>
                 <li><a href="../pages/about_us.php" class="side-navbar-item">About Us</a></li>
                 <li><a href="../pages/contact_us.php" class="side-navbar-item">Contatct Us</a></li>
+                <li><a href="../includes/signin.php" class="side-navbar-item">Sign In</a></li>
+                <li><a href="../includes/signup.php" class="side-navbar-item">Sign Up</a></li>
             </ul>
             <!--  -->
             <ul class="socials-group">
@@ -108,6 +110,7 @@
                 <li><a href="#" class="socials-item"><i class="fab fa-tiktok "></i></a></li>
                 <li><a href="#" class="socials-item"><i class="fab fa-github "></i></a></li> -->
             </ul>
+            
             <!--  -->
             <div class="sidebar-close-btn">
                 <i class="fas fa-close fa-3x"></i>

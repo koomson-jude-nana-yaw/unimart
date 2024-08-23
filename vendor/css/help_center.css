@@ -1,0 +1,28 @@
+.help-center-container {
+  width: 60%;
+  margin: 10px auto;
+}
+
+/* -----------------------------------------------------------  */
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+}
+
+/*  */
+@media screen and (max-width: 992px) {
+}
+
+/*  */
+@media screen and (max-width: 768px) {
+  .help-center-container {
+    width: 80%;
+  }
+}
+
+/*  */
+@media screen and (max-width: 540px) {
+  .help-center-container {
+    width: 90%;
+  }
+}

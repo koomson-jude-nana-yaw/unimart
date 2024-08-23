@@ -10,7 +10,9 @@
 
         <div class="shop-details-container">
         <div class="profile-image-container">
-            <img src="../media/profile_images/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="profile image">
+            <img src="../media/profile_images/<?php if (isset($_SESSION['image'])) {
+                        echo $_SESSION['image'];
+                    } else{ echo 'bbb.png'; } ?>" alt="profile image">
         </div>
 
         <!--  -->

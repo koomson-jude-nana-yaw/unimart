@@ -78,7 +78,8 @@ if (isset($_POST['submit'])) {
             $_SESSION['image'] = $vendor_data['imageURL'];
             $_SESSION['email'] = $vendor_data['email'];
             $_SESSION['username'] = $vendor_data['username'];
-            $_SESSION['full_name'] = $vendor_data['first_name'] . " " . $vendor_data['last_name'];
+            $_SESSION['first_name'] = $vendor_data['first_name'];
+            $_SESSION['last_name'] = $vendor_data['last_name'];
             $_SESSION['phone_number'] = $vendor_data['phone_number'];
             $_SESSION['location'] = $vendor_data['location'];
             $_SESSION['shop_name'] = $vendor_data['shop_name'];

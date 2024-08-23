@@ -16,7 +16,7 @@
     <!--  -->
     <!--  -->
     <div class="side-menu-item">
-        <a href="pending_orders.php" class="pending-orders" > <i class="fas fa-arrow-right"></i> PENDING ORDERS</a>
+        <a href="pending_orders.php" class="pending-orders" > <i class="fas fa-hourglass-1"></i> PENDING ORDERS</a>
     </div>
     <!--  -->
     <!--  -->

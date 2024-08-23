@@ -67,6 +67,9 @@ require_once '../includes/functions.php';
     <link rel="stylesheet" href="css/shop.css?v=<?= time();?>">
     <link rel="stylesheet" href="css/product.css?v=<?= time();?>">
     <link rel="stylesheet" href="css/side_menu.css?v=<?= time();?>">
+    <link rel="stylesheet" href="css/pending_order.css?v=<?= time();?>">
+    <link rel="stylesheet" href="css/help_center.css?v=<?= time();?>">
+    <link rel="stylesheet" href="css/settings.css?v=<?= time();?>">
     <!-- <link rel="stylesheet" href="css/home.css?v=<?= time();?>"> -->
   </head>
   <body>
@@ -104,7 +107,9 @@ require_once '../includes/functions.php';
             <!-- --------------------- -->
             <div class="account-menu-container">
                 <div class="vendor-image">
-                    <img src="../media/profile_images/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="picture">
+                    <img src="../media/profile_images/<?php if (isset($_SESSION['image'])) {
+                        echo $_SESSION['image'];
+                    } else{ echo 'bbb.png'; } ?>" alt="picture">
                 </div>
                 <!--  -->
                 <!--  -->
@@ -122,7 +127,7 @@ require_once '../includes/functions.php';
                     </ul>
                 </div>
                 <div class="vendor-name-container">
-                    <h1><?= ucfirst($_SESSION['full_name']); ?> <span> <i class="fas fa-arrow-circle-down"></i></span> </h1>
+                    <h1><?= ucfirst($_SESSION['first_name'] . ' ' . $_SESSION['last_name']); ?> <span> <i class="fas fa-arrow-circle-down"></i></span> </h1>
                     <p><?= ucfirst($_SESSION['shop_name']); ?></p>
                 </div>
                 

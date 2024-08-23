@@ -10,7 +10,7 @@
         <div class="page-item-wrapper">
 
     <div class="product-page-header">
-        <h1 class="add-product-text">Products</h1> <a href="#add-product" class="add-product-btn"> <i class="fas fa-plus"></i> Add Product </a>
+        <h1 class="add-product-text">Products</h1> <a href="#add-product" class="add-product-btn"> <i class="fas fa-plus"></i> Product </a>
     </div>
 
     <div class="product-search-container">
@@ -70,14 +70,14 @@
         </div>
     </div>
 
-    <form action="./config/add_product.php" method="post" id="add-product" class="add-product-form-container">
+    <form enctype="multipart/form-data" action="config/add_product.php" method="post" id="add-product" class="add-product-form-container">
         <div class="form-text">
             <h2>NEW PRODUCT</h2> 
         </div>
         <!--  -->
         <!--  -->
         <div class="">
-            <input type="hidden" name="product_owner" value="444" >
+            <input type="hidden" name="product_owner" value="<?= $_SESSION['vender_id'] ?>" >
         </div>
         <!--  -->
         <!--  -->
@@ -94,7 +94,7 @@
         <!--  -->
         <!--  -->
         <div class="input-item">
-            <input type="text" name="description" placeholder="Price (Ex: 100)" autocomplete="off"  >
+            <input type="text" name="price" placeholder="Price (Ex: 100)" autocomplete="off"  >
             <!-- <span> <i class="fas fa-product"></i></span> -->
         </div>
         <!--  -->
@@ -127,7 +127,7 @@
 
     <!--  -->
     <!--  -->
-    <form action="./config/update_prodcuct.php" method="post" id="update-product" class="update-product-form-container">
+    <form action="config/update_product.php" method="post" id="update-product" class="update-product-form-container">
         <div class="form-text">
             <h2>EDIT PRODUCT</h2>
         </div>

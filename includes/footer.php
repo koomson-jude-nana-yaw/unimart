@@ -1,16 +1,18 @@
    
       <div class="footer-container">
             <div class="top-container">
-
+                  <span><a href="../includes/signin.php" class="footer-signin-btn">Sign In</a></span>
+                  <span><a href="../includes/signup.php" class="footer-signup-btn">Sign Up</a></span>
+                  
             </div>
             <!--  -->
             <!--  -->
 
             <hr>
             <div class="middle-container">
-                  <div class="unimart-logo">
+                  <!-- <div class="unimart-logo">
                    <a href="../index.php">Uni<span>Mart</span> </a>
-                  </div>
+                  </div> -->
 
                   <div class="policy-container">
                         <a href="#">User Agreements</a>

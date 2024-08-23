@@ -9,6 +9,10 @@ body {
   display: none;
 }
 
+.unimart-logo a {
+  border: none;
+}
+
 .account-menu-container {
   display: flex;
   align-items: center;
@@ -21,7 +25,7 @@ body {
   padding: 10px 15px;
   font-size: 0.9rem;
   outline: none;
-  width: 600px;
+  width: 500px;
 }
 
 .search-submit-btn button {
@@ -107,6 +111,11 @@ body {
   text-decoration: underline;
 }
 
+.footer-signin-btn,
+.footer-signup-btn {
+  display: none;
+}
+
 /* ----------------------------------------------------------- */
 
 /* Media Queries */
@@ -136,6 +145,6 @@ body {
 /*  */
 @media screen and (max-width: 540px) {
   .account-menu-container {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
   }
 }

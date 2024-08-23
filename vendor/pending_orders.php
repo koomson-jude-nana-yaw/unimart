@@ -22,49 +22,82 @@
     <div class="orders-list-container">
         <div class="list-header-container">
             <p class="list-header-item">Product</p>
-            <p class="list-header-item">Category</p>
-            <p class="list-header-item">Service</p>
-            <p class="list-header-item">Location</p>
-            <p class="list-header-item">Price</p>
-            <p class="list-header-item">Edit</p>
+            <p class="list-header-item">Date</p>
+            <p class="list-header-item">Customer Name</p>
+            <p class="list-header-item">Phone Number</p>
+            <p class="list-header-item">Status</p>
+            <p class="list-header-item">Delivered</p>
         </div>
         <!--  -->
         <!--  -->
         <div class="list-container">
-            <p class="list-item"><img src="../images/bathroom/Bathroom Rug Mat.jpg" alt="product Image"> Rug Mat </p>
-            <p class="list-item">Bathroom</p>
-            <p class="list-item">Delivery & Store</p>
-            <p class="list-item">Amamoma, Chief Palace</p>
-            <p class="list-item">GHGH&#8373; 210.00</p>
-            <p class="list-item edit">
-                <span> <a href="#update-product"> <i class="fas fa-pen"></i> </a> </span>
-                <span><a href="config/delete_product.php?product_id=412" ><i class="fas fa-trash"></i></a> </span>
+            <p class="list-item"><img src="../images/bathroom/Bathroom Rug Mat.jpg" alt="product Image"> Rug Mat GH&#8373; 210.00  </p>
+            <p class="list-item">12th August, 2024 12:00pm</p>
+            <p class="list-item">Esther</p>
+            <p class="list-item">0214569856</p>
+            <p class="list-item">Pending</p>
+            <p class="list-item delivered">
+                <span> <a href="config/update_order.php?order_id=451"> <i class="fas fa-check-circle"></i> </a> </span>
             </p>
         </div>
         <!--  -->
         <!--  -->
         <div class="list-container">
-            <p class="list-item"><img src="../images/bathroom/Bathroom Rug Mat.jpg" alt="product Image"> Rug Mat </p>
-            <p class="list-item">Bathroom</p>
-            <p class="list-item">Delivery & Store</p>
-            <p class="list-item">Amamoma, Chief Palace</p>
-            <p class="list-item">GHGH&#8373; 210.00</p>
-            <p class="list-item edit">
-                <span> <a href="#update-product"> <i class="fas fa-pen"></i> </a> </span>
-                <span><a href="config/delete_product.php?product_id=412" ><i class="fas fa-trash"></i></a> </span>
+            <p class="list-item"><img src="../images/bathroom/Bathroom Rug Mat.jpg" alt="product Image"> Rug Mat GH&#8373; 210.00  </p>
+            <p class="list-item">12th August, 2024 12:00pm</p>
+            <p class="list-item">Esther</p>
+            <p class="list-item">0214569856</p>
+            <p class="list-item">Pending</p>
+            <p class="list-item delivered">
+                <span> <a href="config/update_order.php?order_id=451"> <i class="fas fa-check-circle"></i> </a> </span>
             </p>
         </div>
         <!--  -->
         <!--  -->
         <div class="list-container">
-            <p class="list-item"><img src="../images/bathroom/Bathroom Rug Mat.jpg" alt="product Image"> Rug Mat </p>
-            <p class="list-item">Bathroom</p>
-            <p class="list-item">Delivery & Store</p>
-            <p class="list-item">Amamoma, Chief Palace</p>
-            <p class="list-item">GHGH&#8373; 210.00</p>
-            <p class="list-item edit">
-                <span> <a href="#update-product"> <i class="fas fa-pen"></i> </a> </span>
-                <span><a href="config/delete_product.php?product_id=412" ><i class="fas fa-trash"></i></a> </span>
+            <p class="list-item"><img src="../images/bathroom/Bathroom Rug Mat.jpg" alt="product Image"> Rug Mat GH&#8373; 210.00  </p>
+            <p class="list-item">12th August, 2024 12:00pm</p>
+            <p class="list-item">Esther</p>
+            <p class="list-item">0214569856</p>
+            <p class="list-item">Pending</p>
+            <p class="list-item delivered">
+                <span> <a href="config/update_order.php?order_id=451"> <i class="fas fa-check-circle"></i> </a> </span>
+            </p>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="list-container">
+            <p class="list-item"><img src="../images/bathroom/Bathroom Rug Mat.jpg" alt="product Image"> Rug Mat GH&#8373; 210.00  </p>
+            <p class="list-item">12th August, 2024 12:00pm</p>
+            <p class="list-item">Esther</p>
+            <p class="list-item">0214569856</p>
+            <p class="list-item">Pending</p>
+            <p class="list-item delivered">
+                <span> <a href="config/update_order.php?order_id=451"> <i class="fas fa-check-circle"></i> </a> </span>
+            </p>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="list-container">
+            <p class="list-item"><img src="../images/bathroom/Bathroom Rug Mat.jpg" alt="product Image"> Rug Mat GH&#8373; 210.00  </p>
+            <p class="list-item">12th August, 2024 12:00pm</p>
+            <p class="list-item">Esther</p>
+            <p class="list-item">0214569856</p>
+            <p class="list-item">Pending</p>
+            <p class="list-item delivered">
+                <span> <a href="config/update_order.php?order_id=451"> <i class="fas fa-check-circle"></i> </a> </span>
+            </p>
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="list-container">
+            <p class="list-item"><img src="../images/bathroom/Bathroom Rug Mat.jpg" alt="product Image"> Rug Mat GH&#8373; 210.00  </p>
+            <p class="list-item">12th August, 2024 12:00pm</p>
+            <p class="list-item">Esther</p>
+            <p class="list-item">0214569856</p>
+            <p class="list-item">Pending</p>
+            <p class="list-item delivered">
+                <span> <a href="config/update_order.php?order_id=451"> <i class="fas fa-check-circle"></i> </a> </span>
             </p>
         </div>
     </div>

@@ -117,12 +117,14 @@ if (isset($_POST['submit'])) {
 
     // 
 
+    
 
-    $vendor_insert_query = "INSERT INTO `vendors` (`username`,`email`,`phone_number`,`pass_word`,`terms_agreed`) VALUES (:username, :email,:phone_number, :pass_word, :terms_agreed);";
+
+    $vendor_insert_query = "INSERT INTO `vendors` (`last_name`, `first_name`,`username`,`email`,`phone_number`,`pass_word`,`terms_agreed`, `location`, `shop_name`) VALUES (:last_name, :first_name, :username, :email,:phone_number, :pass_word, :terms_agreed, :loc, :shop_name);";
     $vendor_insert_stmt = $connection->prepare($vendor_insert_query);
     
 
-    if (!($vendor_insert_stmt->execute(['username' => $username, 'email' => $email, 'pass_word' => $hashed_password, 'phone_number' => $phone_number, 'terms_agreed' => $terms_of_service]))) {
+    if (!($vendor_insert_stmt->execute(['last_name' => $last_name,'first_name' => $first_name, 'username' => $username, 'email' => $email, 'pass_word' => $hashed_password, 'phone_number' => $phone_number, 'terms_agreed' => $terms_of_service, 'loc' => $location, 'shop_name' => $shop_name]))) {
         redirect("../includes/signup.php", "error=Sorry. Please try again");
         exit();
     }

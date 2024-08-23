@@ -26,12 +26,16 @@
   margin-top: 20px;
 }
 
-.policy-container a {
+.policy-container a,
+.footer-signin-btn,
+.footer-signup-btn {
   color: #ffffff;
   margin-right: 10px;
 }
 
-.policy-container a:hover {
+.policy-container a:hover,
+.footer-signin-btn:hover,
+.footer-signup-btn:hover {
   color: #acabab;
   text-decoration: underline;
 }
