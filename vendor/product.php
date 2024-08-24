@@ -183,7 +183,12 @@
         </div>
     </form>
 
-            <script>
+            
+
+        </div>
+</div>
+
+<script>
                 document.querySelector('.new-product').classList.add('menu-active');
             </script>
 
@@ -191,9 +196,6 @@
     include 'footer.php';
      include '../includes/footer.php';
       ?>
-
-        </div>
-</div>
 
 
 

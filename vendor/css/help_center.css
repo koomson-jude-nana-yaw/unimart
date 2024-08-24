@@ -2,6 +2,14 @@
   width: 60%;
   margin: 10px auto;
 }
+.submit-item input {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submit-item input:hover {
+  box-shadow: 0 0 5px #ff0000;
+}
 
 /* -----------------------------------------------------------  */
 

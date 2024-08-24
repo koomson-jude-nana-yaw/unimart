@@ -75,6 +75,7 @@ if (isset($_POST['submit'])) {
 
             session_start();
             $_SESSION['vender_id'] = $vendor_data['vender_id'];
+            $_SESSION['email'] = $vendor_data['email'];
 
 
             // 

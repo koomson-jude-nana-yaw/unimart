@@ -38,7 +38,6 @@
             // Statement 
             $stmt_vendor = $connection->prepare($vendor_select_query);
             $stmt_vendor->execute(['vender_id' => $vender_id]);
-            
             $vendor_data = $stmt_vendor->fetch(PDO::FETCH_ASSOC);
 
             if (!password_verify($new_password,$vendor_data['pass_word'])) {
@@ -48,9 +47,7 @@
 
             $hashed_password = password_hash($new_password, PASSWORD_DEFAULT);
 
-
-
-
+            
         $vendor_update_query = "UPDATE `vendors` SET `pass_word` = :pass_word WHERE vender_id = :vender_id ;";
         $vendor_update_stmt = $connection->prepare($vendor_update_query);
     

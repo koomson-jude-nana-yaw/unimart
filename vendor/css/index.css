@@ -1,20 +1,20 @@
 .page-container {
   display: flex;
-  align-items: self-start;
-  justify-content: space-between;
-  margin-top: 20px;
+  /* align-items: self-start;
+  justify-content: space-between; */
+  /* margin-top: 20px; */
 }
 
 .side-menu-container {
   width: 20%;
-  /* height: 100vh; */
   background-color: rgb(255, 255, 255);
 }
 
 .page-item-wrapper {
+  padding: 20px 0;
   width: 80%;
-  height: 100vh;
-  overflow-y: scroll;
+  height: auto;
+  /* overflow-y: scroll; */
 }
 
 /* ------------------------------------------------ */

@@ -83,9 +83,13 @@ $vender_products_count = $vender_products_stmt->rowCount();
   <body>
 
 
+    
+
+
     <!-- Overall body container -->
     <main class="body-container">
         <!-- top nav bar container -->
+
 
 
         <nav class="top-navbar-container">
@@ -108,10 +112,28 @@ $vender_products_count = $vender_products_stmt->rowCount();
                     <div class="search-submit-btn"> 
                         <button type="submit"> <i class="fas fa-search search-btn" ></i> </button> 
                     </div>
-
-                    <!-- -------- -->
                 </form>
             </div>
+
+
+            <p class="error-container <?php if(isset($_GET['error'])){ echo 'error-container-active'; } ?>">
+        <?php 
+        if (isset($_GET['error'])) {
+          echo $_GET['error'];
+        } 
+        ?>
+        </p>
+
+        <p class="success-container <?php if(isset($_GET['error'])){ echo 'success-container-active'; } ?>">
+        <?php 
+        if (isset($_GET['success'])) {
+          echo $_GET['success'];
+        } 
+        ?>
+        </p>
+
+                    <!-- -------- -->
+             
             <!-- --------------------- -->
             <div class="account-menu-container">
                 <div class="vendor-image">
@@ -135,7 +157,7 @@ $vender_products_count = $vender_products_stmt->rowCount();
                     </ul>
                 </div>
                 <div class="vendor-name-container">
-                    <h1><?= ucfirst($vendors['first_name'] . ' ' . $vendors['last_name']); ?> <span> <i class="fas fa-arrow-circle-down"></i></span> </h1>
+                    <h2><?= ucfirst($vendors['first_name'] . ' ' . $vendors['last_name']); ?> <span> <i class="fas fa-arrow-circle-down"></i></span> </h2>
                     <p><?= ucfirst($vendors['shop_name']); ?></p>
                 </div>
                 

@@ -19,8 +19,8 @@
         <!--  -->
 
         <div class="shop-name-container">
-            <h2><?= ucfirst($vendors['shop_name']); ?></h2>
-            <p><?= ucfirst($vendors['location']); ?>. <?= $vender_products_count ?> Products</p>
+            <h2><?= ucwords($vendors['shop_name']); ?></h2>
+            <p><?= ucwords($vendors['location']); ?>. <?= $vender_products_count ?> Products</p>
         </div>
     </div>
     <h3 class="shop-products-text">Shop products (<?= $vender_products_count ?>) </h3>
@@ -38,9 +38,9 @@
                 <div class="product-image-container">
                     <img src="../media/product_pictures/<?= $product->image_URL ?>" alt="product image">
                 </div>
-                <h2 class="product-name"><?= $product->product_name ?></h2>
+                <h4 class="product-name"><?= ucwords($product->product_name) ?></h4>
                 <p class="product-price">GH&#8373; <?= $product->price ?></p>
-                <a href="add_product.php"> <i class="fas fa-edit"></i> Edit Product </a>
+                <a href="product.php"> <i class="fas fa-edit"></i> Edit Product </a>
                 <span>
                     <a href="config/delete_product.php?product_id=<?= $product->product_id ?>">  <i class="fas fa-trash"></i></a>
                 </span>
@@ -67,18 +67,18 @@
 
 
 
-             <script>
+     
+
+    </div>
+</div>
+
+        <script>
                 document.querySelector('.view-shop').classList.add('menu-active');
             </script>
     <?php 
     include 'footer.php';
     include '../includes/footer.php'; 
     ?>
-
-    </div>
-</div>
-
-
 
 
 

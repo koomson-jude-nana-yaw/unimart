@@ -10,7 +10,7 @@
         <div class="page-item-wrapper">
             <!--  -->
             <div class="dashboard-text-container">
-                <h2>Welcome <?= ucfirst($_SESSION['username']) ?>, </h2>
+                <h2>Welcome <?= ucfirst($vendors['username']) ?>, </h2>
             </div>
             <!--  -->
             <!--  -->
@@ -44,24 +44,18 @@
 
                 </div>
             </div>
-            <div class="dashboard-blank"></div>
-
-
-
-            <script>
-                document.querySelector('.dashboard').classList.add('menu-active');
-            </script>
-        <?php
-
-            include 'footer.php';
-            include '../includes/footer.php';
-
-        ?>
 
         </div>
 
         
-
+            <script>
+                document.querySelector('.dashboard').classList.add('menu-active');
+            </script>
     </div>
+<?php
 
+    include 'footer.php';
+    include '../includes/footer.php';
+
+?>
 

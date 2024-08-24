@@ -8,7 +8,7 @@
 
 
 
-        $get_image_query = "SELECT `imageURL` FROM products WHERE product_id = :product_id;";
+        $get_image_query = "SELECT `image_URL` FROM products WHERE product_id = :product_id;";
         $get_image_stmt = $connection->prepare($get_image_query);
         $get_image_stmt->execute(['product_id' => $product_id]);
         $product_image = $get_image_stmt->fetch();

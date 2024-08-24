@@ -29,6 +29,10 @@
 
 
 
+            
+        </div>
+</div>
+
             <script>
                 document.querySelector('.notification').classList.add('menu-active');
             </script>
@@ -36,5 +40,3 @@
 
     <?php include 'footer.php' ?>
     <?php include '../includes/footer.php' ?>
-        </div>
-</div>

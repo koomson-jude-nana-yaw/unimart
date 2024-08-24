@@ -13,6 +13,30 @@ body {
   border: none;
 }
 
+.error-container,
+.success-container {
+  position: fixed;
+  top: 0;
+  color: #ff0000;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-top: 15px;
+  font-size: 1rem;
+  background: #ffffff;
+  transform: translateY(-60px);
+  transition: all ease-in 0.3s;
+}
+
+.success-container {
+  color: #ffffff;
+  background: #016d2e;
+}
+
+.error-container-active,
+.success-container-active {
+  transform: translateY(0);
+}
+
 .account-menu-container {
   display: flex;
   align-items: center;

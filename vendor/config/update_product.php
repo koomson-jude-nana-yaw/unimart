@@ -23,9 +23,9 @@
 
 
         $update_product_query = "UPDATE products SET price = :price WHERE product_id = :product_id;";
-        $del_product_stmt = $connection->prepare($del_product_query);
+        $update_product_stmt = $connection->prepare($update_product_query);
 
-        if ($del_product_stmt->execute(['product_id' => $product_id, 'price' => $price])) {
+        if ($update_product_stmt->execute(['product_id' => $product_id, 'price' => $price])) {
             redirect('../product.php', 'success=Product Updated');
             exit();
         } else{

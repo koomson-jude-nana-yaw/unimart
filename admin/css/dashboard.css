@@ -1,0 +1,24 @@
+.card-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card-item {
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px #d4d4d4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-item p {
+  font-size: 1.8rem;
+}

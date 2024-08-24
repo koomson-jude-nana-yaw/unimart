@@ -18,7 +18,8 @@ img {
   /* width: 100%; */
 }
 
-.error-container {
+.error-container,
+.success-container {
   position: absolute;
   top: 0;
   color: #ff0000;
@@ -27,11 +28,17 @@ img {
   margin-top: 15px;
   font-size: 1.3rem;
   background: #ffffff;
-  transform: translateY(-60px);
+  transform: translateY(-70px);
   transition: all ease-in 0.3s;
 }
 
-.error-container-active {
+.success-container {
+  color: #ffffff;
+  background: #016d2e;
+}
+
+.error-container-active,
+.success-container-active {
   transform: translateY(0);
 }
 
@@ -155,6 +162,7 @@ img {
   overflow: hidden;
   width: 50%;
 }
+
 /* 
 .avatar-container img {
   border-radius: 300px 0 0 300px;

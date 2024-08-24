@@ -29,6 +29,14 @@
         ?>
         </p>
 
+        <p class="success-container <?php if(isset($_GET['error'])){ echo 'success-container-active'; } ?>">
+        <?php 
+        if (isset($_GET['success'])) {
+          echo $_GET['success'];
+        } 
+        ?>
+        </p>
+
 
         <!--  -->
         <div class="signin-container">
