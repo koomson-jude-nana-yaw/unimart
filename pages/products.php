@@ -29,20 +29,21 @@
 <section class="main-container">
 
   <!-- product categories -->
-  <ul class="product-categories">
-    <li>All</li>
-    <li>Supermarket</li>
-    <li>Foods</li>
-    <li>Clothing</li>
-    <li>Phones & Tablets</li>
-    <li>Health & Beauty·</li>
-    <li>Home & Office</li>
-    <li>Appliances</li>
-    <li>Electronics</li>
-    <li>Gaming</li>
-    <li>Computing</li>
-    <li>Others</li>
-  </ul>
+  <div class="categories-container">
+    <ul class="product-categories">
+      <li>All</li>
+      <li>Foods</li>
+      <li>Clothing</li>
+      <li>Phones & Tablets</li>
+      <li>Health & Beauty·</li>
+      <li>Home & Office</li>
+      <li>Appliances</li>
+      <li>Electronics</li>
+      <li>Gaming</li>
+      <li>Computing</li>
+      <li>Others</li>
+    </ul>
+  </div>
 
   <!-- top bar -->
   <div class="top-bar">
@@ -206,44 +207,18 @@
         <div class="background"></div>
     </div>
     
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/smart home devices/Echo Dot with clock (5th generation, 2022 release) Bigger vibrant sound Wi-Fi and Bluetooth smart speaker and Alexa  Cloud Blue.jpg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="product-name">Wi-Fi and Bluetooth smart speaker and Alexa</span>
-        <span class="price">GHc 150.00</span>
-        <span class="items-left">100 items left</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/smart home devices/Echo Dot with clock (5th generation, 2022 release) Bigger vibrant sound Wi-Fi and Bluetooth smart speaker and Alexa  Cloud Blue.jpg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="product-name">Wi-Fi and Bluetooth smart speaker and Alexa</span>
-        <span class="price">GHc 150.00</span>
-        <span class="items-left">100 items left</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
   </div>
 </section>
 
 
 
+<div class="product-details-container">
+  <?php
 
+  include_once('../includes/product_details.php')
 
-
-
-
-
-
+  ?>
+</div>
 
 
 
@@ -252,3 +227,5 @@
 <?php 
   require_once '../includes/footer.php';
 ?>
+
+<script src="../js/products.js?v=<?= time();?>"></script>

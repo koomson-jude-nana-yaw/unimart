@@ -256,7 +256,7 @@
                     <p>We are the first and the Best. <br/> Approved </p>
                 </div>
                 <div class="image-content">
-                    <img src="./images/products/headset.jpg" alt="">
+                    <img src="./images/products/headset.png" alt="">
                 </div>
             </div>
             <div class="about-btn">
