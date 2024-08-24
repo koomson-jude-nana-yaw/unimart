@@ -8,6 +8,7 @@
         <div class="page-content-container">
                 <!--  -->
                 <h1 class="page-header-text">VENDORS</h1>
+                <a href="#add-vendor" class="add-vendor" > ADD VENDOR</a>
                 <!--  -->
 
 
@@ -49,6 +50,67 @@
                         <span> <a href="#edit-operator" class="action-btn" > <i class="fas fa-edit"></i> </a></span>
                     </p>
                 </div>
+
+
+
+                <!--  -->
+                <form action="" method="post" class="operator-form" id="add-vendor" >
+                    <div class="form-header">
+                        <p>ADD VENDER</p>
+                    </div>
+                    <!--  -->
+                    <input type="hidden" name="terms_of_service" value="yes">
+                    <!--  -->
+                    <div class="form-item">
+                        <p>First Name</p>
+                        <input type="text" name="first_name" autocomplete="off"  id="">
+                    </div>
+                    <!--  -->
+                    <!--  -->
+                    <div class="form-item">
+                        <p>Last Name</p>
+                        <input type="text" name="last_name" autocomplete="off"  id="">
+                    </div>
+                    <!--  -->
+                    <!--  -->
+                    <div class="form-item">
+                        <p>Username</p>
+                        <input type="text" name="username" autocomplete="off"  id="">
+                    </div>
+                    <!--  -->
+                    <!--  -->
+                    <div class="form-item">
+                        <p>Email</p>
+                        <input type="text" name="email" autocomplete="off"  id="">
+                    </div>
+                    <!--  -->
+                    <!--  -->
+                    <div class="form-item">
+                        <p>Phone Number</p>
+                        <input type="text" name="phone_number" autocomplete="off"  id="">
+                    </div>
+                    <!--  -->
+                    <!--  -->
+                    <div class="form-item">
+                        <p>Location</p>
+                        <input type="text" name="location" autocomplete="off"  id="">
+                    </div>
+                    <!--  -->
+                    <div class="form-item">
+                        <p>Shop Name</p>
+                        <input type="text" name="shop_name" autocomplete="off"  id="">
+                    </div>
+                    <!--  -->
+                    <div class="form-item">
+                        <p>Image</p>
+                        <input type="file" name="image" id="">
+                    </div>
+                    <!--  -->
+                    <!--  -->
+                    <div class="form-submit">
+                        <input type="submit" value="Add" name="add" >
+                    </div>
+                </form>
 
 
 

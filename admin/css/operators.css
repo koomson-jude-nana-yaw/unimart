@@ -8,6 +8,7 @@
 
 .list-header-container {
   background: #f7bebe;
+  font-weight: bolder;
 }
 .list-header-item,
 .list-item {
@@ -40,7 +41,61 @@
 
 .action-btn {
   margin: 5px;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   padding: 5px;
   font-weight: bold;
+}
+
+/* -------- */
+.add-operator,
+.add-vendor {
+  padding: 15px 5px;
+  margin: 20px 0;
+  font-size: 1.3rem;
+  color: #000000;
+}
+
+.operator-form {
+  width: 70%;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 5px #dfdede;
+  border-radius: 20px;
+}
+
+.form-header {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff0000;
+}
+.form-item {
+  margin: 10px 0;
+}
+
+.form-item P {
+  font-size: 1.1rem;
+}
+
+.form-item input,
+.form-item select {
+  outline: none;
+  width: 80%;
+  padding: 10px 5px;
+  font-size: 1.2rem;
+}
+
+.form-submit input {
+  background: #ff0000;
+  padding: 10px 5px;
+  border: none;
+  width: 20%;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.form-submit input:hover {
+  box-shadow: 0 0 10px #ff0000;
 }

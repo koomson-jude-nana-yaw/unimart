@@ -56,6 +56,7 @@ require_once '../includes/functions.php';
     <link rel="stylesheet" href="css/dashboard.css?v=<?= time();?>">
     <link rel="stylesheet" href="css/side_menu.css?v=<?= time();?>">
     <link rel="stylesheet" href="css/operators.css?v=<?= time();?>">
+    <link rel="stylesheet" href="css/services.css?v=<?= time();?>">
     <!-- <link rel="stylesheet" href="css/home.css?v=<?= time();?>"> -->
   </head>
   <body>

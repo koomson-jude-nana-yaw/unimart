@@ -7,7 +7,52 @@
 
         <div class="page-content-container">
             <h2>SERVICES</h2>
-            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi quos dolorem quis necessitatibus voluptatibus distinctio aliquid odio omnis beatae repellat! </p>
+
+
+            <div class="card-container">
+                <!--  -->
+                <div class="card-item service-card">
+                    <img src="../media/product_pictures/afc3d88afbdc1a46dfa0b1f1f279b4d5.jpg" alt="image">
+                    <h3>Hair stylist</h3>
+                    <p>0245212358 - Amamoma</p>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="card-item service-card">
+                    <img src="../media/product_pictures/afc3d88afbdc1a46dfa0b1f1f279b4d5.jpg" alt="image">
+                    <h3>Hair stylist</h3>
+                    <p>0245212358 - Amamoma</p>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="card-item service-card">
+                    <img src="../media/product_pictures/afc3d88afbdc1a46dfa0b1f1f279b4d5.jpg" alt="image">
+                    <h3>Hair stylist</h3>
+                    <p>0245212358 - Amamoma</p>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="card-item service-card">
+                    <img src="../media/product_pictures/afc3d88afbdc1a46dfa0b1f1f279b4d5.jpg" alt="image">
+                    <h3>Hair stylist</h3>
+                    <p>0245212358 - Amamoma</p>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="card-item service-card">
+                    <img src="../media/product_pictures/afc3d88afbdc1a46dfa0b1f1f279b4d5.jpg" alt="image">
+                    <h3>Hair stylist</h3>
+                    <p>0245212358 - Amamoma</p>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="card-item service-card">
+                    <img src="../media/product_pictures/afc3d88afbdc1a46dfa0b1f1f279b4d5.jpg" alt="image">
+                    <h3>Hair stylist</h3>
+                    <p>0245212358 - Amamoma</p>
+                </div>
+                <!--  -->
+            </div>
         </div>
 
 

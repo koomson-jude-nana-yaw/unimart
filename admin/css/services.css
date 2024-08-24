@@ -1,0 +1,18 @@
+.service-card {
+  box-shadow: none;
+}
+
+.service-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.service-card h3 {
+  font-size: 1rem;
+}
+
+.service-card p {
+  font-size: 0.6rem;
+  font-weight: bold;
+}
