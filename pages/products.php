@@ -30,6 +30,10 @@
 
   <!-- product categories -->
   <div class="categories-container">
+    <div class="arrows">
+      <i class="fa fa-angle-left icon" aria-hidden="true"></i>
+      <i class="fa fa-angle-right icon" aria-hidden="true"></i>
+    </div>
     <ul class="product-categories">
       <li>All</li>
       <li>Foods</li>
