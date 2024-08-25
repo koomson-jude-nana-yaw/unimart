@@ -21,7 +21,7 @@
     <!--  -->
     <!--  -->
     <div class="side-menu-item">
-        <a href="services.php" class="services" > <i class="fas fa-history"></i> SERVICES</a>
+        <a href="services.php" class="services" > <i class="fas fa-podcast"></i> PRODUCTS & SERVICES</a>
     </div>
     <!--  -->
     <!--  -->

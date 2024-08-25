@@ -18,7 +18,7 @@
         $del_product_stmt = $connection->prepare($del_product_query);
 
         if ($del_product_stmt->execute(['product_id' => $product_id])) {
-            $image_path = '../../media/product_pictures/' . $product_image->imageURL;
+            $image_path = '../../media/product_pictures/' . $product_image->image_URL;
             unlink( $image_path );
             redirect('../product.php', 'success=Product deleted');
             exit();

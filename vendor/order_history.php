@@ -1,7 +1,7 @@
 <?php 
     include './header.php';
 
-    $past_orders_query = "SELECT * FROM orders INNER JOIN products ON products.product_id = orders.product_id WHERE product_owner = $vender_id AND order_status = 'settled';";
+    $past_orders_query = "SELECT * FROM orders LEFT OUTER JOIN products ON products.product_id = orders.product_id WHERE product_owner = $vender_id AND order_status = 'settled';";
     $past_orders_stmt = $connection->prepare($past_orders_query);
     $past_orders_stmt->execute();
     $vender_past_orders = $past_orders_stmt->fetchAll();

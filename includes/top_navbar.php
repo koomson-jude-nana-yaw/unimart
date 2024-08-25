@@ -17,7 +17,7 @@
                     <li><a href="../index.php">Home</a></li>
                     <li><a href="../pages/products.php">Products</a></li>
                     <li><a href="../pages/services.php">Services</a></li>
-                    <li><a href="../pages/shops.php">Shops</a></li>
+                    <!-- <li><a href="../pages/shops.php">Shops</a></li> -->
                     <li><a href="../pages/about_us.php">About Us</a></li>
                     <li><a href="../pages/contact_us.php">Contact Us</a></li>
                     <!-- <li></li> -->
@@ -94,7 +94,7 @@
                 <li><a href="../index.php" class="side-navbar-item ">Home</a></li>
                 <li><a href="../pages/products.php" class="side-navbar-item">Products</a></li>
                 <li><a href="../pages/services.php" class="side-navbar-item">Services</a></li>
-                <li><a href="../pages/shops.php" class="side-navbar-item">Shops</a></li>
+                <!-- <li><a href="../pages/shops.php" class="side-navbar-item">Shops</a></li> -->
                 <li><a href="../pages/about_us.php" class="side-navbar-item">About Us</a></li>
                 <li><a href="../pages/contact_us.php" class="side-navbar-item">Contatct Us</a></li>
                 <li><a href="../includes/signin.php" class="side-navbar-item">Sign In</a></li>
