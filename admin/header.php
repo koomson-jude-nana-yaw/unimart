@@ -1,27 +1,68 @@
 <?php
     // initializing a session
-    // session_start();
+    session_start();
     
     // Checking if the user is already logged in, if no then redirect  to login page
-    // if(!isset($_SESSION["vender_id"]) && !isset($_SESSION['email'])){
-    //     header("Location: ../includes/signin.php");
-    //     exit();
-    // }
+    if(!isset($_SESSION["account_id"]) && !isset($_SESSION['email'])){
+        header("Location: index.php");
+        exit();
+    }
     
 
 require_once '../database/connection_instance.php';
 require_once '../includes/functions.php';
 
-// $vendor_select_query = "SELECT * FROM vendors WHERE vender_id = $_SESSION['vender_id'];";
-// $vendor_stmt = $connection->prepare($vendor_select_query);
-// $vendor_stmt->execute();
-// $vendors = $vendor_stmt->fetchAll();
+
+$account_id = $_SESSION['account_id'];
+
+$account_select_query = "SELECT * FROM accounts WHERE account_id = $account_id;";
+$account_stmt = $connection->prepare($account_select_query);
+$account_stmt->execute();
+$accounts = $account_stmt->fetch(PDO::FETCH_ASSOC);
 
 
 
 
 
 // fetch data
+// Data from all tables
+    // services
+    $service_data_query = "SELECT * FROM services;";
+    $service_data_stmt = $connection->prepare($service_data_query);
+    $service_data_stmt->execute();
+    $service_data_count = $service_data_stmt->rowCount();
+
+
+
+    // operators
+    $operators_data_query = "SELECT * FROM accounts WHERE account_type = 2;";
+    $operators_data_stmt = $connection->prepare($operators_data_query);
+    $operators_data_stmt->execute();
+    $operators_data_count = $operators_data_stmt->rowCount();
+
+
+
+    // vendors
+    $vendors_data_query = "SELECT * FROM vendors;";
+    $vendors_data_stmt = $connection->prepare($vendors_data_query);
+    $vendors_data_stmt->execute();
+    $vendors_data_count = $vendors_data_stmt->rowCount();
+
+
+    // products
+    $products_data_query = "SELECT * FROM vendors;";
+    $products_data_stmt = $connection->prepare($products_data_query);
+    $products_data_stmt->execute();
+    $products_data_count = $products_data_stmt->rowCount();
+
+
+
+
+     // orders
+    $orders_data_query = "SELECT * FROM orders;";
+    $orders_data_stmt = $connection->prepare($orders_data_query);
+    $orders_data_stmt->execute();
+    $orders_data_count = $orders_data_stmt->rowCount();
 
 
 
@@ -57,6 +98,7 @@ require_once '../includes/functions.php';
     <link rel="stylesheet" href="css/side_menu.css?v=<?= time();?>">
     <link rel="stylesheet" href="css/operators.css?v=<?= time();?>">
     <link rel="stylesheet" href="css/services.css?v=<?= time();?>">
+    <link rel="stylesheet" href="css/settings.css?v=<?= time();?>">
     <!-- <link rel="stylesheet" href="css/home.css?v=<?= time();?>"> -->
   </head>
   <body>
@@ -107,19 +149,19 @@ require_once '../includes/functions.php';
                 <div class="menu-list-container">
                     <ul>
                         <li class="list-item"><a href="dashboard.php">DASHBOARD</a></li>
-                        <li class="list-item"><a href="operators.php">OPERATORS</a></li>
+                        <?php if($account_id == 1){?>    <li class="list-item"><a href="operators.php">OPERATORS</a></li>     <?php } ?>
                         <li class="list-item"><a href="vendors.php">VENDORS</a></li>
                         <!-- <li class="list-item"><a href="shops.php">SHOPS</a></li> -->
                         <!-- <li class="list-item"><a href="product.php">PRODUCTS</a></li> -->
                         <li class="list-item"><a href="services.php">SERVICES</a></li>
                         <li class="list-item"><a href="notification.php">NOTIFICATION</a></li>
                         <li class="list-item"><a href="settings.php">SETTINGS</a></li>
-                        <li class="list-item logout"><a class="" href="../configuration/logout.php">Log Out</a></li>
+                        <li class="list-item logout"><a class="" href="config/logout.php">Log Out</a></li>
                     </ul>
                 </div>
                 <div class="vendor-name-container">
-                    <h2>first_name last_name <span> <i class="fas fa-arrow-circle-down"></i></span> </h2>
-                    <p>ADMIN</p>
+                    <h2> <?= strtoupper($accounts['first_name'] . ' ' . $accounts['last_name']) ?> <span> <i class="fas fa-arrow-circle-down"></i></span> </h2>
+                    <p><?php if($accounts['account_type'] == 1){ echo 'ADMIN'; } else{echo 'OPERATOR';} ?></p>
                 </div>
                 
             </div>

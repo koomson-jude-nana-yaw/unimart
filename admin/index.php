@@ -56,7 +56,7 @@
                 <!--  -->
                 <!--  -->
                 <div class="input-item">
-                  <input type="text" name="username" placeholder="User Name or Email" autocomplete="off">
+                  <input type="text" name="email" placeholder="Email" autocomplete="off">
                   <span class="form-icon">
                     <i class="fas fa-user-circle"></i>
                   </span>
@@ -89,7 +89,7 @@
                 <!--  -->
                 <!--  -->
                 <div class="signup-link-container">
-                  <span>I don't have an Account? <a href="../includes/signup.php">Sign Up</a></span>
+                  <p>I don't have an Account? Contact Management </p>
                 </div>
                 <!--  -->
               </form>

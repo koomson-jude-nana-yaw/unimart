@@ -88,8 +88,8 @@
               <img src="../media/product_pictures/<?= $product->image_URL ?>" alt="">
             </div>
             <div class="product-info">
-              <span class="product-name"><?= $product->product_name ?></span>
-              <span class="price">GH&#8373; <?= $product->price ?></span>
+              <h3 class="product-name"><?= strtoupper($product->product_name) ?></h3>
+              <p class="price">GH&#8373; <?= $product->price ?></p>
               <!-- <span class="items-left">100 items left</span> -->
             </div>
             <div class="background"></div>

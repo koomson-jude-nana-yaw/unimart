@@ -1,5 +1,7 @@
 <?php 
-    include_once 'header.php'
+    include_once 'header.php';
+
+    $vendors_data = $vendors_data_stmt->fetchAll();
 ?>
 
     <div class="page-container">
@@ -17,12 +19,13 @@
                     <p class="list-header-item">Image</p>
                     <p class="list-header-item">Name</p>
                     <p class="list-header-item">Email</p>
-                    <p class="list-header-item">Phone Number</p>
+                    <p class="list-header-item">Phone</p>
+                    <p class="list-header-item">Location</p>
                     <p class="list-header-item">Status</p>
                     <p class="list-header-item ">Action</p>
                 </div>
                 <!--  -->
-                <div class="list-container">
+                <!-- <div class="list-container">
                     <p class="list-item">
                         <img src="../images/bathroom/Bathroom Rug Mat.jpg" alt="product Image"> 
                     </p>
@@ -34,22 +37,36 @@
                         <span> <a href="config/deactivate_operator.php?account_id=451" class="action-btn" > <i class="fas fa-close"></i> </a></span>
                         <span> <a href="#edit-operator" class="action-btn" > <i class="fas fa-edit"></i> </a></span>
                     </p>
-                </div>
+                </div> -->
                 <!--  -->
+                    <?php 
+                    
+                    if ($vendors_data_count == 0) {
+                        echo '<p> No Vendors Available </p>';
+                    }
+
+                      foreach ($vendors_data as $vendor) { ?>
+
+
+                    <div class="list-container">
+                        <p class="list-item">
+                            <img src="../media/profile_images/<?= $vendor->imageURL == NULL ? 'bbb.png' : $vendor->imageURL ?>" alt="Image"> 
+                        </p>
+                        <p class="list-item"><?= ucwords($vendor->first_name . ' ' . $vendor->last_name) ?></p>
+                        <p class="list-item"><?= $vendor->email ?></p>
+                        <p class="list-item"><?= $vendor->phone_number ?> </p>
+                        <p class="list-item"><?= $vendor->location ?></p>
+                        <p class="list-item"><?= $vendor->vendor_status ?></p>
+                        <p class="list-item ">
+                            <span> <a href="config/deactivate_operator.php?vender_id=<?= $vendor->vender_id ?>" class="action-btn" > <i class="fas fa-close"></i> </a></span>
+                            <span> <a href="config/activate_vendor.php?vender_id=<?= $vendor->vender_id ?>" class="action-btn" > <i class="fas fa-check"></i> </a></span>
+                            <span> <a href="#edit-vendor" class="action-btn" > <i class="fas fa-edit"></i> </a></span>
+                        </p>
+                    </div>
+
+                <?php  } ?>
                 <!--  -->
-                <div class="list-container">
-                    <p class="list-item">
-                        <img src="../images/bathroom/Bathroom Rug Mat.jpg" alt="product Image"> 
-                    </p>
-                    <p class="list-item">Kwame Anagbey</p>
-                    <p class="list-item">kwame@gmail.com</p>
-                    <p class="list-item">0214569856</p>
-                    <p class="list-item">Suspended</p>
-                    <p class="list-item action-btn">
-                        <span> <a href="config/deactivate_operator.php?account_id=451" class="action-btn" > <i class="fas fa-close"></i> </a></span>
-                        <span> <a href="#edit-operator" class="action-btn" > <i class="fas fa-edit"></i> </a></span>
-                    </p>
-                </div>
+                
 
 
 
