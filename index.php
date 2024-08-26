@@ -158,7 +158,7 @@
                 <div class="header">
                     <h1>Best Online Store Shop and Service Provider</h1>
                     <div class="actions">
-                        <div class="explore-btn">Explore</div>
+                        <a href="pages/products.php" class="explore-btn">Explore</a>
                         <img src="./images/icons/1.webp" alt="">
                     </div>
                 </div>
@@ -227,25 +227,37 @@
             <div class="products">
                 <ul class="wrapper">
                     <li>
+                        <a href="pages/products.php">
                         <img src="./images/products/girl.jpg" alt="">
+                        </a>
                     </li>
                     <li>
+                        <a href="pages/products.php">
                         <img src="./images/products/images.jpeg" alt="">
+                        </a>
                     </li>
                     <li>
                         <img src="./images/products/white_sneaker.jpg" alt="">
                     </li>
                     <li>
+                        <a href="pages/products.php">
                         <img src="./images/products/68097_1668607420.webp" alt="">
+                        </a>
                     </li>
                     <li>
+                        <a href="pages/products.php">
                         <img src="./images/bathroom/e11d8d462de1b8d72804d9eab49043f2.jpg" alt="">
+                        </a>
                     </li>
                     <li>
+                        <a href="pages/products.php">
                         <img src="./images/home decor/Versace black white hot luxury window curtain for child bedroom living room window decor,curtain waterproof with sun block.jpg" alt="">
+                        </a>
                     </li>
                     <li>
-                        <img src="./images/kitchensets/20 Favorite Kitchen Gadgets Under $30 - Kelley Nan.jpg" alt="">
+                        <a href="pages/products.php">
+                            <img src="./images/kitchensets/20 Favorite Kitchen Gadgets Under $30 - Kelley Nan.jpg" alt="image">
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -267,7 +279,7 @@
                 </div>
             </div>
             <div class="about-btn">
-                <p>Explore Now</p>
+                <a href="pages/products.php" >Explore Now</a>
                 <i class="fa fa-angle-right right-angle"></i>
             </div>
         </div>
@@ -285,25 +297,37 @@
             <div class="products">
                 <ul class="wrapper">
                     <li>
+                        <a href="pages/products.php">
                         <img src="./images/products/girl.jpg" alt="">
+                        </a>
                     </li>
                     <li>
+                        <a href="pages/products.php">
                         <img src="./images/products/images.jpeg" alt="">
+                        </a>
                     </li>
                     <li>
                         <img src="./images/products/white_sneaker.jpg" alt="">
                     </li>
                     <li>
+                        <a href="pages/products.php">
                         <img src="./images/products/68097_1668607420.webp" alt="">
+                        </a>
                     </li>
                     <li>
+                        <a href="pages/products.php">
                         <img src="./images/bathroom/e11d8d462de1b8d72804d9eab49043f2.jpg" alt="">
+                        </a>
                     </li>
                     <li>
+                        <a href="pages/products.php">
                         <img src="./images/home decor/Versace black white hot luxury window curtain for child bedroom living room window decor,curtain waterproof with sun block.jpg" alt="">
+                        </a>
                     </li>
                     <li>
+                        <a href="pages/products.php">
                         <img src="./images/kitchensets/20 Favorite Kitchen Gadgets Under $30 - Kelley Nan.jpg" alt="">
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -322,28 +346,40 @@
             <div class="products">
                 <ul class="wrapper" id = 'service'>
                     <li>
-                        <img src="./images/service/happy-african-male-trader-food-260nw-2083822600.webp" alt="">
+                        <a href="pages/services.php">
+                            <img src="./images/service/happy-african-male-trader-food-260nw-2083822600.webp" alt="">
                         <p>Foods</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="./images/service/Massage Therapy Student.jpg" alt="">
+                        <a href="pages/services.php">
+                            <img src="./images/service/Massage Therapy Student.jpg" alt="">
                         <p>Massage</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="./images/service/haircut-81-1.jpeg" alt="">
+                        <a href="pages/services.php"> 
+                            <img src="./images/service/haircut-81-1.jpeg" alt="">
                         <p>Haircut</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="./images/service/image-african-man-foot-wearworkshop-260nw-1839497299.webp" alt="">
-                        <p>Shoe Maker</p>
+                        <a href="pages/services.php">
+                            <img src="./images/service/image-african-man-foot-wearworkshop-260nw-1839497299.webp" alt="">
+                            <p>Shoe Maker</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="./images/service/laundry-facilities.jpg" alt="">
+                        <a href="pages/services.php">
+                            <img src="./images/service/laundry-facilities.jpg" alt="">
                         <p>Laundry</p>
+                        </a>
                     </li>
                     <li>
-                        <img src="./images/service/istockphoto-1465634394-612x612.jpg" alt="">
+                        <a href="pages/services.php">
+                            <img src="./images/service/istockphoto-1465634394-612x612.jpg" alt="">
                         <p>seamstress</p>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -366,8 +402,8 @@
 <!-- ------------------------------ -->
 <div class="footer-container">
             <div class="top-container">
-                <span><a href="../includes/signin.php" class="footer-signin-btn">Sign In</a></span>
-                <span><a href="../includes/signup.php" class="footer-signup-btn">Sign Up</a></span>
+                <span><a href="includes/signin.php" class="footer-signin-btn">Sign In</a></span>
+                <span><a href="includes/signup.php" class="footer-signup-btn">Sign Up</a></span>
             </div>
             <!--  -->
             <!--  -->
@@ -379,9 +415,9 @@
                   </div>
 
                   <div class="policy-container">
-                        <a href="#">User Agreements</a>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Cookie Policy</a>
+                        <a href="includes/user_agreement.html">User Agreements</a>
+                        <a href="includes/privacy_policy.html">Privacy Policy</a>
+                        <a href="includes/cookies.html">Cookie Policy</a>
                   </div>
 
             </div>

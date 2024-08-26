@@ -34,9 +34,30 @@
             margin-top: 20px;
             font-size: 0.9em;
         }
+
+
+        .back-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: #000000;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+      }
+      .back-button:hover {
+        background-color: #000000;
+      }
     </style>
 </head>
 <body>
+
+    <button class="back-button" onclick="goBack()">
+      <i class="fas fa-arrow-left"></i> Back
+    </button>
+
     <h1>Cookies Policy</h1>
     <h2>What Are Cookies?</h2>
     <p>
@@ -84,6 +105,18 @@
     <p>
         If you have any issues concerning our use of cookies, please contact us via <a href="mailto:info@unimart.com">info@unimart.com</a>.
     </p>
+
+    <button class="back-button" onclick="goBack()">
+      <i class="fas fa-arrow-left"></i> Back
+    </button>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+
+    <script src="../fontawesome/js/all.js"></script>
     
     <footer>
         &copy; 2024 UniMart. All rights reserved.

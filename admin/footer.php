@@ -12,9 +12,9 @@
                   </div> -->
 
                   <div class="policy-container">
-                        <a href="#">User Agreements</a>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Cookie Policy</a>
+                        <a href="../includes/user_agreement.html">User Agreements</a>
+                        <a href="../includes/privacy_policy.html">Privacy Policy</a>
+                        <a href="/includes/cookies.html">Cookie Policy</a>
                   </div>
 
             </div>
