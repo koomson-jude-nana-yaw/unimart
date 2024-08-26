@@ -11,7 +11,7 @@
     <!--  -->
     <!--  -->
     <div class="side-menu-item">
-        <a href="product.php" class="new-product" > <i class="fas fa-shop"></i> PRODUCT</a>
+        <a href="product.php" class="new-product" > <i class="fas fa-shop"></i> PRODUCTS & SERICES</a>
     </div>
     <!--  -->
     <!--  -->

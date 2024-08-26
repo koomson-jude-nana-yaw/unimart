@@ -1,4 +1,23 @@
+<?php 
 
+
+    require_once '../database/connection_instance.php';
+
+
+  // service
+    $service_query = "SELECT * FROM services INNER JOIN vendors ON service_owner = vender_id;";
+    $service_stmt = $connection->prepare($service_query);
+    $service_stmt->execute();
+    $services = $service_stmt->fetchAll();
+
+
+
+
+
+
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -60,6 +79,7 @@
 
   <div class="product-container">
     
+<<<<<<< HEAD
     <div class="product">
       <div class="image-container">
         <img src="../images/service/fashion_designer.jpeg" alt="">
@@ -72,9 +92,30 @@
       </div>
         <div class="background"></div>
     </div>
+=======
+   
+
+    <?php 
+
+        foreach ($services as $service) { ?>
+          <div class="product">
+            <div class="image-container">
+              <img src="../media/service_pictures/<?= $service->image_URL ?>" alt="">
+            </div>
+            <div class="product-info">
+              <span class="service-name"><?= ucwords($service->service_name) ?></span>
+              <span class="service-type"><?= ucwords($service->service_type) ?></span>
+              <span class="owner-name"><?= ucwords($service->username) ?></span>
+              <span class="contact"><?= $service->phone_number ?></span>
+            </div>
+            <div class="background"></div>
+          </div>
+      <?php } ?>
+>>>>>>> 30c469a9817c2b7fd74e3424d9afd5f72c374152
     
     
-    <div class="product">
+    
+    <!-- <div class="product">
       <div class="image-container">
         <img src="../images/service/african-american-hairdresser-apron-trimming-260nw-1955233402.webp" alt="">
       </div>
@@ -85,9 +126,10 @@
         <span class="telNumb">+233 55 101 8070</span>
       </div>
         <div class="background"></div>
-    </div>
+    </div> -->
     
     
+<<<<<<< HEAD
     <div class="product">
       <div class="image-container">
         <img src="../images/service/maxresdefault.jpg" alt="">
@@ -226,6 +268,8 @@
         <div class="background"></div>
     </div>
     
+=======
+>>>>>>> 30c469a9817c2b7fd74e3424d9afd5f72c374152
   </div>
 </section>
 

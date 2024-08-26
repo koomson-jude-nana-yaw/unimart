@@ -57,12 +57,13 @@
     }
 
 
-    $product_id_query = "SELECT product_id FROM products ORDER BY product_id DESC LIMIT 1;";
-    $product_id_stmt = $connection->prepare($product_id_query);
-    $product_id_stmt->execute();
-    $product_id = $product_id_stmt->fetch();
-    $product_id = $product_id == null? $product_id = 1 : intval($product_id->product_id) + 1;
+   
+    // random number generation
+    $pic_numbers = number_generator();
 
+    $pic_numbers = number_generator();
+    $product_id = $pic_numbers[2];
+    
 
 
     $new_picture_name = $product_id . "." . $picture_ext;

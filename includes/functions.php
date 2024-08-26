@@ -42,6 +42,17 @@ function redirect($address, $message = ""){
     header("Location: $address?$message");
 }
 
+function number_generator($min_num = 1, $max_num = 1000){
+    
+        $numbers = range($min_num, $max_num);
+
+        shuffle($numbers);
+
+        return $numbers;
+
+    }
+
+
 
 // function get_balance($student_id){
 

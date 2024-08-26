@@ -9,6 +9,15 @@
     $product_and_cat = $product_and_category_stmt->fetchAll();
 
 
+    // service
+
+    $service_query = "SELECT * FROM services WHERE service_owner = $vender_id;";
+    $service_stmt = $connection->prepare($service_query);
+    $service_stmt->execute();
+    $services = $service_stmt->fetchAll();
+    $service_count = $service_stmt->rowCount();
+
+
     // Categories
     $category_query = "SELECT * FROM categories;";
     $category_stmt = $connection->prepare($category_query);
@@ -54,9 +63,9 @@
         foreach($product_and_cat as $product){ ?>
             <div class="list-container">
                 <p class="list-item"><img src="../media/product_pictures/<?= $product->image_URL ?>" alt="product Image"> <?= $product->product_name ?> </p>
-                <p class="list-item"><?= $product->category_name ?></p>
+                <p class="list-item"><?= ucwords($product->category_name) ?></p>
                 <p class="list-item">Delivery & Store</p>
-                <p class="list-item"><?= $product->location ?></p>
+                <p class="list-item"><?= ucwords($product->location) ?></p>
                 <p class="list-item">GH&#8373; <?= $product->price ?></p>
                 <p class="list-item edit">
                     <span> <a href="#update-product"> <i class="fas fa-pen"></i> </a> </span>
@@ -65,6 +74,30 @@
             </div>
         <?php } } ?>
         <!--  -->
+
+        <!-- service list -->
+          <div class="list-header-container">
+            <p class="list-header-item">Image</p>
+            <p class="list-header-item">Service</p>
+            <p class="list-header-item">Type</p>
+            <p class="list-header-item">Edit</p>
+        </div>
+        <!--  -->
+         <?php 
+        if ($service_count == 0) {
+            echo '<p>No Service available</p>';
+        } else{
+        foreach($services as $service){ ?>
+            <div class="list-container">
+                <p class="list-item"><img src="../media/service_pictures/<?= $service->image_URL ?>" alt="Service Image"> 
+                <p class="list-item"><?= ucwords($service->service_name) ?></p>
+                <p class="list-item"><?= ucwords($service->service_type) ?></p>
+                <p class="list-item edit">
+                    <!-- <span> <a href="#update-product"> <i class="fas fa-pen"></i> </a> </span> -->
+                    <span><a href="config/delete_service.php?service_id=<?= $service->service_id ?>" ><i class="fas fa-trash"></i></a> </span>
+                </p>
+            </div>
+        <?php } } ?>
         
         <!--  -->
         
@@ -136,6 +169,53 @@
             <input type="submit" value="Add Product" name="submit" >
         </div>
     </form>
+
+
+    <!--  -->
+    <form enctype="multipart/form-data" action="config/add_service.php" method="post" id="add-service" class="add-product-form-container">
+        <div class="form-text">
+            <h2>NEW SERVICE</h2> 
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="">
+            <input type="hidden" name="service_owner" value="<?= $vender_id ?>" >
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="input-item">
+            <input type="text" name="service_name" placeholder="Service Name" autocomplete="off"  >
+            <!-- <span> <i class="fas fa-product"></i></span> -->
+        </div>
+        <!--  -->
+        <!--  -->
+        <div class="select-item">
+            <select name="service_type">
+                <option value="">Service Type</option>
+                <option value="home">Home</option>
+                <option value="shop">Shop</option>
+                <option value="shop and home">Shop & Home</option>
+            </select>
+            <!-- <span> <i class="fas fa-product"></i></span> -->
+        </div>
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <!--  -->
+        <div class="input-item">
+            <input type="file" name="service_image" placeholder="Service Image"  >
+            <!-- <span> <i class="fas fa-product"></i></span> -->
+        </div>
+
+        <!--  -->
+        <!--  -->
+        <div class="submit-item">
+            <input type="submit" value="Add Service" name="submit" >
+        </div>
+    </form>
+
+
+    <!--  -->
 
 
 

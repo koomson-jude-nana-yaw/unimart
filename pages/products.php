@@ -1,4 +1,15 @@
+<?php 
 
+    require_once '../database/connection_instance.php';
+
+
+  // service
+    $product_query = "SELECT * FROM products INNER JOIN vendors ON Product_owner = vender_id;";
+    $product_stmt = $connection->prepare($product_query);
+    $product_stmt->execute();
+    $products = $product_stmt->fetchAll();
+
+?>
 
 
 <!DOCTYPE html>
@@ -56,7 +67,7 @@
 
   <div class="product-container">
     
-    <div class="product">
+    <!-- <div class="product">
       <div class="image-container">
         <img src="../images/smart home devices/Echo Dot with clock (5th generation, 2022 release) Bigger vibrant sound Wi-Fi and Bluetooth smart speaker and Alexa  Cloud Blue.jpg" alt="">
       </div>
@@ -66,150 +77,26 @@
         <span class="items-left">100 items left</span>
       </div>
         <div class="background"></div>
-    </div>
+    </div> -->
+
+
+    <?php 
+
+        foreach ($products as $product) { ?>
+          <div class="product">
+            <div class="image-container">
+              <img src="../media/product_pictures/<?= $product->image_URL ?>" alt="">
+            </div>
+            <div class="product-info">
+              <span class="product-name"><?= $product->product_name ?></span>
+              <span class="price">GH&#8373; <?= $product->price ?></span>
+              <!-- <span class="items-left">100 items left</span> -->
+            </div>
+            <div class="background"></div>
+          </div>
+        <?php } ?>
     
     
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/Accessories/6 Widely Spaced Outlets (3 Side), 3 USB Ports Power Strip with USB, SUPERDANNY, 5 Ft Extension Cord - White" alt="">
-      </div>
-      <div class="product-info">
-        <span class="product-name">USB Ports Power Strip</span>
-        <span class="price">GHc 15.00</span>
-        <span class="items-left">75 items left</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/home decor/Christian dior window curtain luxury curtain trending 2023 for child bedroom living room trending 2023 for home decoration.jpg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="product-name">Christian dior window curtain</span>
-        <span class="price">GHc 17.00</span>
-        <span class="items-left">10 items left</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/Furnitures/Centre table.png" alt="">
-      </div>
-      <div class="product-info">
-        <span class="product-name">Centre Table</span>
-        <span class="price">GHc 70.00</span>
-        <span class="items-left">112 items left</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/smart home devices/Certified Refurbished Echo Dot (5th Gen, 2022 release) with clock.jpg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="product-name">Refurbished Echo Dot</span>
-        <span class="price">GHc 165.00</span>
-        <span class="items-left">157 items left</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/Accessories/Ceramic Tabletop Desktop Modern Fountain with Ball for Indoor Table Desk Office and Home Decoration White.jpg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="product-name">Ceramic Tabletop Desktop</span>
-        <span class="price">GHc 45.00</span>
-        <span class="items-left">5 items left</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/Accessories/The Dorm-Room Must Haves That Your Kid Actually Wants" alt="">
-      </div>
-      <div class="product-info">
-        <span class="product-name">Lorem Ipsum</span>
-        <span class="price">GHc 57.58</span>
-        <span class="items-left">89 items left</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/smart home devices/Echo Dot with clock (5th generation, 2022 release) Bigger vibrant sound Wi-Fi and Bluetooth smart speaker and Alexa  Cloud Blue.jpg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="product-name">Wi-Fi and Bluetooth smart speaker and Alexa</span>
-        <span class="price">GHc 150.00</span>
-        <span class="items-left">100 items left</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/smart home devices/Echo Dot with clock (5th generation, 2022 release) Bigger vibrant sound Wi-Fi and Bluetooth smart speaker and Alexa  Cloud Blue.jpg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="product-name">Wi-Fi and Bluetooth smart speaker and Alexa</span>
-        <span class="price">GHc 150.00</span>
-        <span class="items-left">100 items left</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/smart home devices/Echo Dot with clock (5th generation, 2022 release) Bigger vibrant sound Wi-Fi and Bluetooth smart speaker and Alexa  Cloud Blue.jpg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="product-name">Wi-Fi and Bluetooth smart speaker and Alexa</span>
-        <span class="price">GHc 150.00</span>
-        <span class="items-left">100 items left</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/smart home devices/Echo Dot with clock (5th generation, 2022 release) Bigger vibrant sound Wi-Fi and Bluetooth smart speaker and Alexa  Cloud Blue.jpg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="product-name">Wi-Fi and Bluetooth smart speaker and Alexa</span>
-        <span class="price">GHc 150.00</span>
-        <span class="items-left">100 items left</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/smart home devices/Echo Dot with clock (5th generation, 2022 release) Bigger vibrant sound Wi-Fi and Bluetooth smart speaker and Alexa  Cloud Blue.jpg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="product-name">Wi-Fi and Bluetooth smart speaker and Alexa</span>
-        <span class="price">GHc 150.00</span>
-        <span class="items-left">100 items left</span>
-      </div>
-        <div class="background"></div>
-    </div>
     
   </div>
 </section>
