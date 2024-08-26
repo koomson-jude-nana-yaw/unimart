@@ -52,6 +52,11 @@ if (isset($_POST['submit'])) {
 
             $account_data = $stmt_account->fetch(PDO::FETCH_ASSOC);
 
+            if ($account_data['account_status'] !== 'active') {
+                redirect('../index.php','error=Account is Suspended');
+                exit();
+            }
+
             if (!password_verify($password,$account_data['pass_word'])) {
                 redirect('../index.php','error=Incorrect password');
                 exit();

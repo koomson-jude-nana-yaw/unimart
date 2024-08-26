@@ -67,6 +67,11 @@ if (isset($_POST['submit'])) {
 
             $vendor_data = $stmt_vendor->fetch(PDO::FETCH_ASSOC);
 
+            if ($vendor_data['vendor_status'] !== 'active') {
+                redirect('../index.php','error=Account is Suspended');
+                exit();
+            }
+
             if (!password_verify($password,$vendor_data['pass_word'])) {
                 redirect('../includes/signin.php','error=Incorrect password');
                 exit();

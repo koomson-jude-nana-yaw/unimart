@@ -1,5 +1,5 @@
 <?php 
-    include_once 'header.php'
+    include_once 'header.php';
 ?>
 
     <div class="page-container">
@@ -40,7 +40,7 @@
                 Profile
             </h2>
             <!--  -->
-            <form action="config/update_vendor.php" method="post" class="profile-form-container">
+            <form action="config/update_account.php" method="post" class="profile-form-container">
                 <!--  -->
                     <input type="hidden" name="account_id" value="<?= $account_id ?>">
                 <div class="profile-form-item">
@@ -99,7 +99,7 @@
             </h2>
             <form action="config/change_password.php" method="post" class="change-password-form">
                 <!--  -->
-                    <input type="hidden" name="vender_id" value="<?= $vender_id ?>" >
+                    <input type="hidden" name="account_id" value="<?= $account_id ?>" >
                 <div class="password-form-item">
                     <p>Old Password</p>
                     <input type="password" name="old_password" placeholder="Old Password">
