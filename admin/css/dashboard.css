@@ -17,8 +17,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: #ff0000;
+  color: #ffffff;
+}
+
+.card-item:nth-child(even) {
+  background: #210194;
 }
 
 .card-item p {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }

@@ -1,5 +1,12 @@
 .service-card {
   box-shadow: none;
+  background: none;
+  color: #000000;
+}
+
+.service-card:nth-child(even) {
+  background: none;
+  color: #000000;
 }
 
 .service-card img {

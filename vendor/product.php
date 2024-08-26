@@ -188,6 +188,21 @@
             <!-- <span> <i class="fas fa-product"></i></span> -->
         </div>
         <!--  -->
+        <div class="service_name">
+            <select name="service_type">
+                <option value="">Service Name</option>
+                <option value="Graphic Designer">Graphic Designer</option>
+                <option value="Shoe Maker">Shoe Maker</option>
+                <option value="Hair Stylist">Hair Stylist</option>
+                <option value="Make-up Artist">Makeup Artist</option>
+                <option value="Barber">Barber</option>
+                <option value="Delivery Service">Delivery Service</option>
+                <option value="Laundry Service">Laundry Service</option>
+                <option value="Printing Service">Printing Service</option>
+                <option value="Seamstress & Tailor">Seamstress & Tailor</option>
+                <option value="Gas Filling">Gas Filling</option>
+                <option value="Cleaner">Cleaner</option>
+            </select>
         <!--  -->
         <div class="select-item">
             <select name="service_type">
