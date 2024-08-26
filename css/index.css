@@ -312,7 +312,8 @@ ul {
 
 @media screen and (max-width: 430px) {
   .flex-column-left .header h1{
-    font-size: 50px;
+    font-size: 35px;
+    line-height: 40px;
   }
 }
 
@@ -343,15 +344,15 @@ ul {
 
 @media screen and (max-width: 430px) {
   .flex-column-left .header .actions .explore-btn{
-    width: 135px;
+    width: 130px;
     height: 50px;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 .flex-column-left .header .actions img{
-  width: 38px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 
 .flex-column-left .what-makes-us-pro{
@@ -584,7 +585,8 @@ ul {
 
 @media screen and (max-width: 430px) {
   .new-products-container .new-p-header h1{
-    font-size: 30px;
+    font-size: 25px;
+    line-height: 35px;
   }
 }
 
@@ -632,16 +634,16 @@ ul {
 
 
 .new-products-container .products .wrapper li{
-  width: 230px;
-  height: 280px;
+  width: 200px;
+  height: 250px;
   overflow: hidden;
   cursor: pointer;
 }
 
 @media screen and (max-width: 430px) {
   .new-products-container .products .wrapper li{
-    width: 200px;
-    height: 210px;
+    width: 150px;
+    height: 200px;
   }
 }
 
@@ -684,6 +686,7 @@ ul {
 @media screen and (max-width: 430px) {
   .about-us .about-us-header{
     margin-bottom: 0;
+    font-size: 25px;
   }
 }
 
@@ -724,7 +727,7 @@ ul {
   @media screen and (max-width: 430px) {
     .about-us .about-content .text-content{
       width: 100%;
-      gap: 30px;
+      gap: 10px;
       align-items: flex-start;
       justify-content: flex-start;
     }
@@ -734,7 +737,7 @@ ul {
 .about-us .about-content .text-content h1{
   font-size: 80px;
   line-height: 94px;
-  color: #ffffff;
+  color: #e2e0e0;
 }
 
 @media screen and (max-width: 834px) {
@@ -745,8 +748,9 @@ ul {
 
   @media screen and (max-width: 430px) {
   .about-us .about-content .text-content h1{
-      font-size: 45px;
-      line-height: 70px;
+      width: 90%;
+      font-size: 32px;
+      line-height: 45px;
     }
   }
 }
@@ -754,7 +758,14 @@ ul {
 .about-us .about-content .text-content p{
   font-size: 20px;
   line-height: 30px;
-  color: #ffffff;
+  color: #e2e0e0;
+}
+
+@media screen and (max-width: 430px) {
+  .about-us .about-content .text-content p{
+    font-size: 16px;
+    line-height: 30px;
+  }
 }
 
 
@@ -783,8 +794,9 @@ ul {
 
 @media screen and (max-width: 430px) {
 .about-us .about-content .image-content img{
-    width: 350px;
-    height: 350px;
+    margin-left: -20px;
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -833,27 +845,80 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 12.5px;
-  color: #FFFFFF;
+  color: #000;
 }
 
 .popular-items .new-p-header h1{
   font-size: 20px;
 }
 
+/* most popular product */
+.popular-items .new-p-header h1,
+.service .new-p-header h1{
+  font-size: 35px;
+  margin-bottom: -10px;
+}
+
+@media screen and (max-width: 430px) {
+  .popular-items .new-p-header h1,
+.service .new-p-header h1{
+    font-size: 20px;
+  }
+}
+
+
 
 /* services */
+.service .products{
+  margin-top: -30px;
+}
+
+
+@media screen and (max-width: 430px) {
+  .service .products{
+    margin-top: -10px;
+  }
+}
+
+
 #service li{
-  width: 220px;
-  height: 220px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 430px) {
+  #service li{
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+#service li img{
+  width: 160px;
+  height: 160px;
   border-radius: 100%;
 }
 
-/* @media screen and (max-width: 430px) {
-  #service li{
-    width: 220px;
-    height: 220px;
+
+@media screen and (max-width: 430px) {
+  #service li img{
+    width: 100px;
+    height: 100px;
   }
-} */
+}
+
+#service li p{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
 
 
 

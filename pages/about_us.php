@@ -25,17 +25,15 @@
 
 
 
+<section class="about_container">
+  <!--  -->
+  <div class="header">
+    <h1 class="header_text">About Us</h1>
+    <p>Welcome to UniMart Online Marketplace, your one-stop shop for all things related to our vibrant university community! Our platform is designed to support students, faculty, and staff by providing a convenient place to access a wide range of products and services tailored specifically for our campus.</p>
+  </div>
 
-
-
-
-
-
-
-
-
-
-
+  
+</section>
 
 
 

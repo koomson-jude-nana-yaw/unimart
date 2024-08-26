@@ -278,7 +278,7 @@
 
             <!-- header -->
             <div class="new-p-header">
-                <h1 style = 'color: #482BE7; font-size: 35px'>Most Popular Items</h1>
+                <h1>Most Popular Items</h1>
             </div>
 
             <!-- products -->
@@ -315,7 +315,7 @@
 
             <!-- header -->
             <div class="new-p-header">
-                <h1 style = 'color: #482BE7; font-size: 35px'>Most Popular Services</h1>
+                <h1>Most Popular Services</h1>
             </div>
 
             <!-- products -->
@@ -323,24 +323,27 @@
                 <ul class="wrapper" id = 'service'>
                     <li>
                         <img src="./images/service/happy-african-male-trader-food-260nw-2083822600.webp" alt="">
+                        <p>Foods</p>
                     </li>
                     <li>
                         <img src="./images/service/Massage Therapy Student.jpg" alt="">
+                        <p>Massage</p>
                     </li>
                     <li>
                         <img src="./images/service/haircut-81-1.jpeg" alt="">
+                        <p>Haircut</p>
                     </li>
                     <li>
                         <img src="./images/service/image-african-man-foot-wearworkshop-260nw-1839497299.webp" alt="">
-                    </li>
-                    <li>
-                        <img src="./images/service/Kelvin.jpg" alt="">
+                        <p>Shoe Maker</p>
                     </li>
                     <li>
                         <img src="./images/service/laundry-facilities.jpg" alt="">
+                        <p>Laundry</p>
                     </li>
                     <li>
                         <img src="./images/service/istockphoto-1465634394-612x612.jpg" alt="">
+                        <p>seamstress</p>
                     </li>
                 </ul>
             </div>
