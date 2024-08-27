@@ -25,8 +25,8 @@
 }
 
 .card{
-    width: 903px;
-    height: 670px;
+    max-width: 903px;
+    height: auto;
     background-color: rgba(56, 56, 248, 0.8);
     border-radius: 20px;
 }
@@ -68,6 +68,12 @@
     gap: 15px;
     justify-content: space-around;
     align-items: center;
+}
+
+@media screen and (max-width: 430px) {
+    .product_info_container{
+        flex-direction: column;
+    }
 }
 
 .product_image{

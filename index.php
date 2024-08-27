@@ -279,7 +279,7 @@
                 </div>
             </div>
             <div class="about-btn">
-                <a href="pages/products.php" >Explore Now</a>
+                <a href="pages/about_us.php" >Explore Now</a>
                 <i class="fa fa-angle-right right-angle"></i>
             </div>
         </div>
