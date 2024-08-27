@@ -78,7 +78,7 @@
                     </ul>
                 </div>
 
-                <!--  -->
+<!--                 
                 <div class="p_sizes">
                     <p>Sizes</p>
                     <ul>
@@ -91,7 +91,7 @@
                         <li class = 'null'>44.5</li>
                     </ul>
                     <p class="footer">Size guide</p>
-                </div>
+                </div> -->
 
                 <!--  -->
                 <div class="order_btn">

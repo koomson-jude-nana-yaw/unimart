@@ -78,21 +78,6 @@
   </div>
 
   <div class="product-container">
-    
-<<<<<<< HEAD
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/service/fashion_designer.jpeg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="service-name">Fashion Designer</span>
-        <span class="service-type">Home and Store Service</span>
-        <span class="owner-name">Mrs. Vero (Lady Gaaga)</span>
-        <span class="telNumb">+233 55 101 8070</span>
-      </div>
-        <div class="background"></div>
-    </div>
-=======
    
 
     <?php 
@@ -103,15 +88,14 @@
               <img src="../media/service_pictures/<?= $service->image_URL ?>" alt="">
             </div>
             <div class="product-info">
-              <span class="service-name"><?= ucwords($service->service_name) ?></span>
-              <span class="service-type"><?= ucwords($service->service_type) ?></span>
-              <span class="owner-name"><?= ucwords($service->username) ?></span>
-              <span class="contact"><?= $service->phone_number ?></span>
+              <h3 class="service-name"><?= ucwords($service->service_name) ?></h3>
+              <p class="service-type"><?= ucwords($service->service_type) ?></p>
+              <p class="owner-name"><?= ucwords($service->username) ?></p>
+              <p class="contact"><?= $service->phone_number ?></p>
             </div>
             <div class="background"></div>
           </div>
       <?php } ?>
->>>>>>> 30c469a9817c2b7fd74e3424d9afd5f72c374152
     
     
     
@@ -128,150 +112,7 @@
         <div class="background"></div>
     </div> -->
     
-    
-<<<<<<< HEAD
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/service/maxresdefault.jpg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="service-name">Natural Hair Salon</span>
-        <span class="service-type">Store Service</span>
-        <span class="owner-name">Precious (Heaven's beauty)</span>
-        <span class="telNumb">+233 55 101 8070</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/service/image-african-man-foot-wearworkshop-260nw-1839497299.webp" alt="">
-      </div>
-      <div class="product-info">
-        <span class="service-name">Footwear maker</span>
-        <span class="service-type">Store Service</span>
-        <span class="owner-name">Gabbisco</span>
-        <span class="telNumb">+233 55 101 8070</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/products/repair.jpg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="service-name">Phone Repairer</span>
-        <span class="service-type">Store Service</span>
-        <span class="owner-name">Mosco</span>
-        <span class="telNumb">+233 55 101 8070</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/service/devery.jpeg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="service-name">Delivery</span>
-        <span class="service-type">Everywhere</span>
-        <span class="owner-name">Adisco</span>
-        <span class="telNumb">+233 55 101 8070</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/service/african-american-woman-applying-makeup-by-makeup-artist-beauty-saloon_627829-4586.avif" alt="">
-      </div>
-      <div class="product-info">
-        <span class="service-name">Make Ups</span>
-        <span class="service-type">Home & Store Services</span>
-        <span class="owner-name">Beauty queen</span>
-        <span class="telNumb">+233 55 101 8070</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-   <div class="product">
-      <div class="image-container">
-        <img src="../images/service/Uber.jpg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="service-name">Uber Driver</span>
-        <span class="service-type">Everywhere</span>
-        <span class="owner-name">The Overseer</span>
-        <span class="telNumb">+233 55 101 8070</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/service/barbaring.webp" alt="">
-      </div>
-      <div class="product-info">
-        <span class="service-name">Barbar</span>
-        <span class="service-type">Store</span>
-        <span class="owner-name">AshPapy</span>
-        <span class="telNumb">+233 55 101 8070</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/service/seemstress.jpg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="service-name">Seamstress</span>
-        <span class="service-type">Store Services</span>
-        <span class="owner-name">DressCode</span>
-        <span class="telNumb">+233 55 101 8070</span>
-      </div>
-        <div class="background"></div>
-    </div>
-
-
-    <div class="product">
-      <div class="image-container">
-        <img src="../images/service/haircut-81-1.jpeg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="service-name">Barbar</span>
-        <span class="service-type">Store Services</span>
-        <span class="owner-name">BBF</span>
-        <span class="telNumb">+233 55 101 8070</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-    
-   <div class="product">
-      <div class="image-container">
-        <img src="../images/service/cheff.jpg" alt="">
-      </div>
-      <div class="product-info">
-        <span class="service-name">Food Vendor</span>
-        <span class="service-type">Store Services</span>
-        <span class="owner-name">Pampar You Tongue</span>
-        <span class="telNumb">+233 55 101 8070</span>
-      </div>
-        <div class="background"></div>
-    </div>
-    
-=======
->>>>>>> 30c469a9817c2b7fd74e3424d9afd5f72c374152
-  </div>
-</section>
+    </section>
 
 
 

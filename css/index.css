@@ -668,7 +668,7 @@ ul {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: linear-gradient(to right, blue, white);
+  background: linear-gradient(to right, #0000ff, white);
 
 }
 

@@ -1,13 +1,12 @@
 <?php 
 
-    require_once '../database/connection_instance.php';
+require_once '../database/connection_instance.php';
 
-
-  // service
-    $product_query = "SELECT * FROM products INNER JOIN vendors ON Product_owner = vender_id;";
-    $product_stmt = $connection->prepare($product_query);
-    $product_stmt->execute();
-    $products = $product_stmt->fetchAll();
+// Fetch products from the database
+$product_query = "SELECT * FROM products INNER JOIN vendors ON Product_owner = vender_id;";
+$product_stmt = $connection->prepare($product_query);
+$product_stmt->execute();
+$products = $product_stmt->fetchAll();
 
 ?>
 
@@ -80,21 +79,22 @@
     </div> -->
 
 
-    <?php 
-
-        foreach ($products as $product) { ?>
-          <div class="product">
-            <div class="image-container">
-              <img src="../media/product_pictures/<?= $product->image_URL ?>" alt="">
-            </div>
-            <div class="product-info">
-              <h3 class="product-name"><?= strtoupper($product->product_name) ?></h3>
-              <p class="price">GH&#8373; <?= $product->price ?></p>
-              <!-- <span class="items-left">100 items left</span> -->
-            </div>
-            <div class="background"></div>
-          </div>
-        <?php } ?>
+   <?php foreach ($products as $product) { ?>
+      <div class="product" 
+          data-id="<?= $product->id ?>" 
+          data-name="<?= $product->product_name ?>" 
+          data-price="<?= $product->price ?>" 
+          data-image="<?= $product->image_URL ?>">
+        <div class="image-container">
+          <img src="../media/product_pictures/<?= $product->image_URL ?>" alt="">
+        </div>
+        <div class="product-info">
+          <span class="product-name"><?= $product->product_name ?></span>
+          <span class="price">GH&#8373; <?= $product->price ?></span>
+          <span class="view_more">View More</span>
+        </div>
+      </div>
+    <?php } ?>
     
     
     
