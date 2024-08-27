@@ -4,7 +4,7 @@
     require_once '../../database/connection_instance.php';
 
     if (isset($_GET['service_id'])) {
-        $product_id = $_GET['service_id'];
+        $service_id = $_GET['service_id'];
 
 
 
@@ -20,7 +20,7 @@
         if ($del_service_stmt->execute(['service_id' => $service_id])) {
             $image_path = '../../media/service_pictures/' . $service_image->image_URL;
             unlink( $image_path );
-            redirect('../product.php', 'success=Product deleted');
+            redirect('../product.php', 'success=Service deleted');
             exit();
         } else{
             redirect('../product.php', 'error=Something went wrong.');
