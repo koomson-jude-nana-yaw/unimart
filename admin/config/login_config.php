@@ -1,7 +1,6 @@
 <?php
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    redirect('../admin/dashboard.php');
-    exit();
+    redirect('../dashboard.php');
     
 }
 
@@ -16,7 +15,7 @@ include_once('../../includes/functions.php');
 if (isset($_POST['submit'])) {
 
     // filtering inputs
-    $username = strtolower(validate_text_input($_POST['username']));
+    $email = strtolower(validate_text_input($_POST['email']));
     $password = validate_text_input($_POST['password']);
 
 
@@ -26,8 +25,8 @@ if (isset($_POST['submit'])) {
     // ----------------------------------------------------
 
     
-    if (empty($username)) {
-        redirect('../index.php','error=Username is empty');
+    if (empty($email)) {
+        redirect('../index.php','error=Email is empty');
         exit();
     }
 
@@ -40,31 +39,33 @@ if (isset($_POST['submit'])) {
 
 
             ## Making database fetch
-            $vendor_select_query = "SELECT * FROM vendors WHERE `email` = :email OR `username` = :username;";
+            $account_select_query = "SELECT * FROM accounts WHERE `email` = :email;";
             
             // Statement 
-            $stmt_vendor = $connection->prepare($vendor_select_query);
-            $stmt_vendor->execute(['email' => $username, 'username' => $username]);
+            $stmt_account = $connection->prepare($account_select_query);
+            $stmt_account->execute(['email' => $email]);
 
-            if ($stmt_vendor->rowCount() == 0) {
-                redirect('../includes/signin.php','Wrong username or email');
+            if ($stmt_account->rowCount() == 0) {
+                redirect('../index.php','Wrong email or email not Registered');
                 exit();
             } 
 
-            $vendor_data = $stmt_vendor->fetch(PDO::FETCH_ASSOC);
+            $account_data = $stmt_account->fetch(PDO::FETCH_ASSOC);
 
-            if (!password_verify($password,$vendor_data['pass_word'])) {
-                redirect('../vendor/signin.php','error=Incorrect password');
+            if ($account_data['account_status'] !== 'active') {
+                redirect('../index.php','error=Account is Suspended');
+                exit();
+            }
+
+            if (!password_verify($password,$account_data['pass_word'])) {
+                redirect('../index.php','error=Incorrect password');
                 exit();
             }
 
 
             session_start();
-            $_SESSION['vender_id'] = $vendor_data['vender_id'];
-            $_SESSION['image'] = $vendor_data['imageURL'];
-            $_SESSION['email'] = $vendor_data['email'];
-            $_SESSION['username'] = $vendor_data['username'];
-            $_SESSION['account_type'] = $vendor_data['account_type'];
+            $_SESSION['account_id'] = $account_data['account_id'];
+            $_SESSION['account_type'] = $account_data['account_type'];
 
 
             // 

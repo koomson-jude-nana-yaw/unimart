@@ -50,7 +50,7 @@ function number_generator($min_num = 1, $max_num = 1000){
 
         return $numbers;
 
-    }
+}
 
 
 

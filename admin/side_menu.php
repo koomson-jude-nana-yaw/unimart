@@ -4,10 +4,10 @@
     </div>
     <!--  -->
     <!--  -->
-    <div class="side-menu-item">
-        
+    <?php if($account_id == 1){ ?> 
+        <div class="side-menu-item">
         <a href="operators.php" class="operators" > <i class="fas fa-store"></i> OPERATORS</a>
-    </div>
+        </div>   <?php } ?>
     <!--  -->
     <!--  -->
     <div class="side-menu-item">

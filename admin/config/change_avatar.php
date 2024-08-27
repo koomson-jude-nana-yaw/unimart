@@ -3,7 +3,7 @@
     require_once '../../includes/functions.php';
 
     if (isset($_POST['upload'])) {
-        $vender_id = validate_text_input($_POST['vender_id']);
+        $account_id = validate_text_input($_POST['account_id']);
 
 
 
@@ -48,11 +48,11 @@
     // 
 
     if (move_uploaded_file($picture_temp_name,$picture_folder)) {
-        $avatar_update_query = "UPDATE vendors SET imageURL = :avatar WHERE vender_id = :vender_id;";
+        $avatar_update_query = "UPDATE accounts SET imageURL = :avatar WHERE account_id = :account_id;";
         $avatar_update_stmt = $connection->prepare($avatar_update_query);
     
 
-        if (!($avatar_update_stmt->execute(['vender_id' => $vender_id, 'avatar' => $new_picture_name]))) {
+        if (!($avatar_update_stmt->execute(['account_id' => $account_id, 'avatar' => $new_picture_name]))) {
         redirect('../settings.php','error=Something went wrong. Please try again.');
         exit();
         }

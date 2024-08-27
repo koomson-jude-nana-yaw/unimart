@@ -3,7 +3,7 @@
 .list-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .list-header-container {
@@ -12,14 +12,18 @@
 }
 .list-header-item,
 .list-item {
-  width: 200px;
+  /* width: ; */
   padding: 10px 15px;
-  margin-right: 10px;
+  /* margin-right: 10px; */
+}
+
+.list-item {
+  font-size: 0.9rem;
 }
 
 .list-header-item:nth-child(1),
 .list-item:nth-child(1) {
-  width: 25%;
+  width: 10%;
   /* background: #ff0000; */
 }
 
