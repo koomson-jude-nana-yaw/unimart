@@ -5,6 +5,7 @@
   margin: 0%;
   box-sizing: border-box;
   font-family: Poppins "Times New Roman", Times, serif;
+  scrollbar-width: none;
 }
 html {
   scroll-behavior: smooth;
