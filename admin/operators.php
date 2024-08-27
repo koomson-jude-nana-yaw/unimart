@@ -64,7 +64,7 @@
                         <p class="list-item"><?= ucwords($operator->first_name . ' ' . $operator->last_name) ?></p>
                         <p class="list-item"><?= $operator->email ?></p>
                         <p class="list-item"><?= $operator->phone_number ?> </p>
-                        <p class="list-item"><?= $operator->email ?></p>
+                        <p class="list-item"><?= $operator->account_status ?></p>
                         <p class="list-item ">
                             <span> <a href="config/deactivate_operator.php?account_id=<?= $operator->account_id ?>" class="action-btn" > <i class="fas fa-close"></i> </a></span>
                             <span> <a href="config/activate_operator.php?account_id=<?= $operator->account_id ?>" class="action-btn" > <i class="fas fa-check"></i> </a></span>

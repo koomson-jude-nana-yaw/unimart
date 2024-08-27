@@ -58,7 +58,7 @@
                         <p class="list-item"><?= $vendor->location ?></p>
                         <p class="list-item"><?= $vendor->vendor_status ?></p>
                         <p class="list-item ">
-                            <span> <a href="config/deactivate_operator.php?vender_id=<?= $vendor->vender_id ?>" class="action-btn" > <i class="fas fa-close"></i> </a></span>
+                            <span> <a href="config/deactivate_vendor.php?vender_id=<?= $vendor->vender_id ?>" class="action-btn" > <i class="fas fa-close"></i> </a></span>
                             <span> <a href="config/activate_vendor.php?vender_id=<?= $vendor->vender_id ?>" class="action-btn" > <i class="fas fa-check"></i> </a></span>
                             <span> <a href="#edit-vendor" class="action-btn" > <i class="fas fa-edit"></i> </a></span>
                         </p>
