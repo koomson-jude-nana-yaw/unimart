@@ -208,8 +208,8 @@ button {
 }
 
 .price {
-  color: #988b93;
-  font-size: 15px;
+  color: #000000;
+  font-size: 14px;
   font-weight: 500;
 }
 
@@ -237,6 +237,11 @@ button {
   display: none;
 }
 
+.order_form{
+  display: none;
+}
+
 .displayProductDetails{
   display: block;
 }
+

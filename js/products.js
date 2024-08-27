@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const products = document.querySelectorAll('.product');
     const closeBtn = document.querySelector('.close-btn');
+    const orderBtn = document.querySelector('.order_btn');
     const productDetailsContainer = document.querySelector('.product-details-container');
+    const orderFormContainer = document.querySelector('.order_form');
+    const orderForm = document.getElementById('form');
+    const formContainer = document.querySelector('.form-container');
     
     // Function to open the popup with product details
     function openPopup(product) {
@@ -15,13 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.product_image img').src = `../media/product_pictures/${productImage}`;
         const colorTypesImages = document.querySelectorAll('.color_types img');
 
-        colorTypesImages.forEach(image =>{
+        colorTypesImages.forEach(image => {
             image.src = `../media/product_pictures/${productImage}`;
-        })
-        // document.querySelector('.color_types img')
+        });
         
         // Show the popup
-        // popup.style.display = 'block';
         productDetailsContainer.classList.add('displayProductDetails');
     }
     
@@ -35,7 +37,20 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Event listener to close the popup
     closeBtn.addEventListener('click', () => {
-        // popup.style.display = 'none';
         productDetailsContainer.classList.remove('displayProductDetails');
+    });
+    
+    // Event listener to close the product details and show the order form
+    orderBtn.addEventListener('click', () => {
+        productDetailsContainer.classList.remove('displayProductDetails');
+        orderFormContainer.classList.add('displayProductDetails');
+    });
+
+    // Event listener to close the form if clicked outside
+    document.addEventListener('click', (event) => {
+        // Check if the click was outside the form container
+        if (formContainer.contains(event.target) && !orderForm.contains(event.target)) {
+            orderFormContainer.classList.remove('displayProductDetails');
+        }
     });
 });

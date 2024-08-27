@@ -82,14 +82,14 @@ $products = $product_stmt->fetchAll();
    <?php foreach ($products as $product) { ?>
       <div class="product" 
           data-id="<?= $product->id ?>" 
-          data-name="<?= $product->product_name ?>" 
+          data-name="<?= strtoupper($product->product_name) ?>" 
           data-price="<?= $product->price ?>" 
           data-image="<?= $product->image_URL ?>">
         <div class="image-container">
           <img src="../media/product_pictures/<?= $product->image_URL ?>" alt="">
         </div>
         <div class="product-info">
-          <span class="product-name"><?= $product->product_name ?></span>
+          <span class="product-name"><?= strtoupper($product->product_name) ?></span>
           <span class="price">GH&#8373; <?= $product->price ?></span>
           <span class="view_more">View More</span>
         </div>
@@ -108,6 +108,12 @@ $products = $product_stmt->fetchAll();
 
   include_once('../includes/product_details.php')
 
+  ?>
+</div>
+
+<div class="order_form">
+  <?php
+    include_once('../includes/order_form.php')
   ?>
 </div>
 
