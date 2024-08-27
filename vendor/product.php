@@ -33,7 +33,7 @@
             include_once 'side_menu.php';
         ?>
         <!--  -->
-        <div class="page-item-wrapper">
+    <div class="page-item-wrapper">
 
     <div class="product-page-header">
         <h1 class="add-product-text">Products</h1> <a href="#add-product" class="add-product-btn"> <i class="fas fa-plus"></i> Product </a>
@@ -75,6 +75,9 @@
         <?php } } ?>
         <!--  -->
 
+        <div class="product-page-header">
+        <h1 class="add-product-text">Services</h1> <a href="#add-service" class="add-service-btn"> <i class="fas fa-plus"></i> Service </a>
+    </div>
         <!-- service list -->
           <div class="list-header-container">
             <p class="list-header-item">Image</p>
@@ -282,8 +285,9 @@
 
         </div>
 </div>
+</div>
 
-<script>
+            <script>
                 document.querySelector('.new-product').classList.add('menu-active');
             </script>
 
